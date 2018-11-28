@@ -4,6 +4,17 @@
   display: none;
 }
 
+.btn, .btn:link, .btn:active, .btn:hover, .btn:visited {
+  border-radius: 25px;
+  background-color: #e8bf5d;
+  color: #111111;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 19px 46px;
+  cursor: pointer;
+}
+
 
 /***************HEADER***************/
 
@@ -45,7 +56,7 @@ nav {
   display: inline-block;
 }
 
-.menu-link {
+.menu-link, .menu-link:link, .menu-link:visited {
   color: #111111;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -63,6 +74,54 @@ nav {
 .menu-link:hover {
   border-bottom: 5px solid #e8bf5d;
 }
+
+/****************CONTACT************/
+
+.person {
+  min-height: 840px;
+  background: url("../img/photos/photo-person.png") no-repeat center;
+  background-size: cover;
+}
+
+.bg-shadow {
+  min-height: 840px;
+  background: url("../img/photos/innershadow.png") no-repeat center;
+  background-size: cover;
+}
+
+.person-info {
+  max-width: 970px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 600px;
+}
+
+.person-title {
+  border-left: 2px solid #e8bf5d;
+  padding-left: 13px;
+}
+
+.person-title-name {
+  color: #ffffff;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+
+.person-title-prof {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 31px;
+  margin: 0;
+}
+
+.
 
 
 
