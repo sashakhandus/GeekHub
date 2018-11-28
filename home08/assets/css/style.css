@@ -537,6 +537,78 @@ nav {
   margin-top: 30px;
 }
 
+/*****************FREQUENTLY**************/
+
+.frequently {
+  background: #111111;
+  padding-top: 65px;
+  padding-bottom: 90px;
+}
+
+.frequently a {
+  cursor: pointer;
+}
+
+.frequently-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frequently-list {
+  padding: 0;
+}
+
+.frequently-item {
+  width: 566px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #e8bf5d;
+  display: flex;
+  justify-content: space-between;
+}
+
+.frequently-title {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 31px;
+  margin: 0;
+}
+
+.frequently-sign {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Font Awesome", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.frequently-active {
+  color: #e8bf5d;
+}
+
+.frequently-text {
+  box-sizing: border-box;
+  width: 500px;
+  background: #e8bf5d;
+  padding: 42px 48px;
+}
+
+.frequently-parag {
+  margin: 0;
+  color: #111111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+
+
+
+
 
 
 
