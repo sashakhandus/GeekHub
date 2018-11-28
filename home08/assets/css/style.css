@@ -15,6 +15,74 @@
   cursor: pointer;
 }
 
+/*****************HESDERSECTION**************/
+
+.section-header {
+  max-width: 790px;
+  position: relative;
+  padding: 0;
+}
+
+.header-section-counter {
+  font-family: "Open Sans", sans-serif;
+  font-size: 195px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.section-header-info {
+  border-left: 2px solid #e8bf5d;
+  padding-left: 16px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 10;
+}
+
+.section-header-title {
+  /*color: #ffffff;*/
+  font-family: "Playfair Display", sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.section-header-parag {
+  /*color: #b9b9b9;*/
+  font-family: "Playfair Display", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 31px;
+}
+
+.bg-dark {
+  background: #111111;
+  color: #1d1d1d;
+}
+
+.bg-light {
+  background: #ffffff;
+  color: #f3f3f3;
+}
+
+.title-dark {
+  color: #ffffff;
+}
+
+.parag-dark {
+  color: #666666;
+}
+
+.title-light {
+  color: #ffffff;
+}
+
+.parag-light {
+  color: #b9b9b9;
+}
+
 
 /***************HEADER***************/
 
@@ -121,56 +189,79 @@ nav {
   margin: 0;
 }
 
+/*****************ABOUTUS*******************/
+
+.about-us {
+  padding-top: 65px;
+  padding-bottom: 90px;
+}
+
+.about-us-content {
+  max-width: 1090px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-content h4 {
+  color: #111111;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.about-us-history {
+  max-width: 560px;
+}
+
+.about-us-expertise {
+  max-width: 486px;
+}
+
+.about-us-history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-us-history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.about-us-history-title {;
+  color: #111111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.about-us-history-parag {
+  color: #111111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 430px;
+  padding-left: 45px;
+  line-height: 21px;
+}
+
+.about-us-expertise-parag {
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
 /*****************PRACTISAREA*************/
 
 .practis-area {
   background: #111111;
   padding-top: 65px;
   padding-bottom: 90px;
-}
-
-.section-header {
-  /*padding-top: 20px;
-  padding-bottom: 20px;*/
-  background: #111111;
-  max-width: 790px;
-  position: relative;
-  padding: 0;
-}
-
-.header-section-counter {
-  color: #1d1d1d;
-  font-family: "Open Sans", sans-serif;
-  font-size: 195px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.section-header-info {
-  border-left: 2px solid #e8bf5d;
-  padding-left: 16px;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  z-index: 10;
-}
-
-.section-header-title {
-  color: #ffffff;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 31px;
-  font-weight: 400;
-  margin: 0;
-  margin-bottom: 16px;
-}
-
-.section-header-parag {
-  color: #b9b9b9;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 21px;
-  font-weight: 400;
-  margin: 0;
-  line-height: 1.5;
 }
 
 .practis-area-list {
@@ -225,6 +316,7 @@ nav {
 .bg-real {
   background: url("../img/icons/real-estate.png") no-repeat;
 }
+
 
 
 
