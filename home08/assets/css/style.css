@@ -102,7 +102,7 @@ nav {
 
 .person-title {
   border-left: 2px solid #e8bf5d;
-  padding-left: 13px;
+  padding-left: 16px;
 }
 
 .person-title-name {
@@ -121,9 +121,110 @@ nav {
   margin: 0;
 }
 
-.
+/*****************PRACTISAREA*************/
 
+.practis-area {
+  background: #111111;
+  padding-top: 65px;
+  padding-bottom: 90px;
+}
 
+.section-header {
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+  background: #111111;
+  max-width: 790px;
+  position: relative;
+  padding: 0;
+}
+
+.header-section-counter {
+  color: #1d1d1d;
+  font-family: "Open Sans", sans-serif;
+  font-size: 195px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.section-header-info {
+  border-left: 2px solid #e8bf5d;
+  padding-left: 16px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 10;
+}
+
+.section-header-title {
+  color: #ffffff;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.section-header-parag {
+  color: #b9b9b9;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.practis-area-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.practis-area-item {
+  max-width: 450px;
+  padding-left: 85px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.practis-area-title {
+  color: #ffffff;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.practis-area-parag {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.bg-privat {
+  background: url("../img/icons/privat-client-service.png") no-repeat;
+}
+
+.bg-labour {
+  background: url("../img/icons/labour-and-employment.png") no-repeat;
+}
+
+.bg-cyber {
+  background: url("../img/icons/cyber-sequre.png") no-repeat;
+}
+
+.bg-real {
+  background: url("../img/icons/real-estate.png") no-repeat;
+}
 
 
 
