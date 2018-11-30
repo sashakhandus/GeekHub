@@ -8,7 +8,7 @@
   border-radius: 25px;
   background-color: #e8bf5d;
   color: #111111;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 16px;
   font-weight: 400;
   padding: 19px 46px;
@@ -46,7 +46,7 @@
 
 .section-header-title {
   /*color: #ffffff;*/
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 31px;
   font-weight: 400;
   margin: 0;
@@ -55,7 +55,7 @@
 
 .section-header-parag {
   /*color: #b9b9b9;*/
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 21px;
   font-weight: 400;
   margin: 0;
@@ -104,7 +104,7 @@ header {
 
 .logo-link {
   color: #111111;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 25px;
   font-weight: 700;
   line-height: 45px;
@@ -180,7 +180,7 @@ nav {
 
 .person-title-name {
   color: #ffffff;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 65px;
   font-weight: 400;
   line-height: 1;
@@ -191,6 +191,7 @@ nav {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 31px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -209,7 +210,7 @@ nav {
 
 .about-us-content h4 {
   color: #111111;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 21px;
   font-weight: 400;
   margin: 0;
@@ -290,7 +291,7 @@ nav {
 
 .practis-area-title {
   color: #ffffff;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 21px;
   font-weight: 400;
   margin: 0;
@@ -345,7 +346,7 @@ nav {
 
 .meet-photo-title {
   color: #111111;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 31px;
@@ -416,7 +417,7 @@ nav {
 }
 
 .our-clients-title {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 31px;
@@ -485,7 +486,7 @@ nav {
 .recent-article-title {
   margin: 0;
   display: inline-block;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 21px;
   font-weight: 400;
   letter-spacing: 0.84px;
@@ -579,7 +580,7 @@ nav {
 .frequently-sign {
   margin: 0;
   color: #ffffff;
-  font-family: "Font Awesome", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 31px;
@@ -634,7 +635,7 @@ nav {
   width: 350px;
   color: #111111;
   border-bottom: 1px solid #b9b9b9;
-  padding-top: 35px;
+  margin-top: 35px;
   padding-bottom: 3px;
 }
 
@@ -646,6 +647,7 @@ nav {
   color: #b9b9b9;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   font-style: italic;
   line-height: 31px;
 }
@@ -673,6 +675,41 @@ nav {
   right: -20px;
 }
 
+/*******************FOOTER****************/
+
+footer {
+  background: #111111;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-copyright-title {
+  color: #b5b5b5;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-title-light {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-item {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+.footer-social-link {
+  color: #fbfbfb;
+  font-size: 16px;
+}
 
 
 
