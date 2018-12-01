@@ -581,7 +581,7 @@ nav {
   margin: 0;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 31px;
 }
@@ -624,10 +624,6 @@ nav {
   box-shadow: 0 12px 40px rgba(104, 86, 42, 0.1);
   border-radius: 3px;
   background-color: #ffffff;
-}
-
-.contact-form {
-
 }
 
 .contact input, .contact textarea {
