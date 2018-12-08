@@ -1,0 +1,36 @@
+.lorem {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background: #f9f9fa;
+
+  .float-right {
+    max-width: 50%;
+  }
+
+  .lorem-title {
+    color: $color-title;
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 96px;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .lorem-parag {
+    color: $color-parag;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  .lorem-btn, .lorem-btn:link, .lorem-btn:visited, .lorem-btn:active {
+    margin-top: 75px;
+  }
+
+  .lorem-btn:hover {
+    opacity: 0.7;
+  }
+}

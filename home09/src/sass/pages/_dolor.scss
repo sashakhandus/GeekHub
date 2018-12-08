@@ -1,0 +1,35 @@
+.dolor {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  .float-left {
+    max-width: 50%;
+  }
+
+  .dolor-title {
+    color: $color-title;
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 96px;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .dolor-parag {
+    color: $color-parag;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  .dolor-btn, .lorem-btn:link, .lorem-btn:visited, .lorem-btn:active {
+    margin-top: 75px;
+  }
+
+  .dolor-btn:hover {
+    opacity: 0.7;
+  }
+}

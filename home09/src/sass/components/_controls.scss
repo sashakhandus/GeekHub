@@ -1,0 +1,24 @@
+.controls {
+  li {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  .control, .control:hover, .control:visited, .control:active {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  .control-active, .control:hover {
+    background: #ffffff;
+    opacity: 1;
+  }
+}

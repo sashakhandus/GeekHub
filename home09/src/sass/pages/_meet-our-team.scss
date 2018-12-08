@@ -1,0 +1,56 @@
+.meet-our-team {
+  padding-top: 110px;
+
+  .container {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .section-header {
+    margin: auto;
+    margin-bottom: 110px;
+  }
+
+  .grid-photo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0;
+      position: relative;
+    }
+
+    .hover {
+      display: none;
+      background: $color-green;
+      opacity: 0.9;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    li:hover  .hover {
+      display: flex;
+    }
+
+    h3 {
+      color: #ffffff;
+      font-family: Raleway, sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      line-height: 96px;
+      letter-spacing: 0.9px;
+      margin: auto;
+    }
+
+    img {
+      display: block;
+      height:auto;
+    }
+
+  }
+
+
+
+}

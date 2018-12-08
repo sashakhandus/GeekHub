@@ -1,0 +1,30 @@
+@import "normalize/import-now";
+
+@import 'utils/variables';
+
+@import 'base/basic';
+
+@import 'components/menu';
+@import 'components/btn';
+@import 'components/article';
+@import 'components/controls';
+@import 'components/arrow';
+@import 'components/arrow-right';
+@import 'components/arrow-left';
+@import 'components/arrow-down';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/section-header';
+
+
+@import 'pages/home';
+@import 'pages/aboutus';
+@import 'pages/lorem';
+@import 'pages/dolor';
+@import 'pages/alecto';
+@import 'pages/our-services';
+@import 'pages/meet-our-team';
+@import 'pages/dolor-map';
+@import 'pages/try';

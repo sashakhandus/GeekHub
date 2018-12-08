@@ -1,0 +1,30 @@
+.container {
+  max-width: 1475px;
+  margin: 0 auto;
+}
+
+.container-half {
+  max-width: calc(1475px / 2);
+}
+
+.active {
+  opacity: 0.7;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.green {
+  color: $color-green;
+}

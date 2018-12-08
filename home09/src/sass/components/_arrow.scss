@@ -1,0 +1,11 @@
+
+.arrow, .arrow:link, .arrow:visited, .arrow:hover, .arrow:active {
+  display: block;
+  color: $color-white;
+  position: absolute;
+  text-decoration: none;
+}
+
+.arrow:hover {
+  opacity: 0.7;
+}

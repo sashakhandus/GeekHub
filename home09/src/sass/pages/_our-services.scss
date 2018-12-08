@@ -1,0 +1,81 @@
+.our-services {
+  background: #f9f9fa;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+
+  .our-services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 160px;
+    text-align: left;
+  }
+
+  .our-services-item {
+    box-sizing: border-box;
+    max-width: 685px;
+    margin: 0;
+    margin-bottom: 80px;
+    padding-left: 140px;
+    position: relative;
+  }
+
+  .our-services-item-title {
+    color: $color-title;
+    font-family: "Raleway - Extra Light", sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  .our-services-item-parag {
+    color: $color-parag;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 47.91px;
+    margin: 0;
+  }
+
+  .portfolio:before {
+    display: block;
+    content: url("../img/Portfolio_2.png");
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .design:before {
+    display: block;
+    content: url("../img/Design.png");
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .branding:before {
+    display: block;
+    content: url("../img/Branding.png");
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .development:before {
+    display: block;
+    content: url("../img/Development.png");
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,101 @@
+.article {
+  text-align: center;
+
+  a {
+    width: 182px;
+    height: 182px;
+    background: $color-light-gray;
+    border-radius: 90px;
+    margin: 0 auto;
+    display: block;
+    max-width: 300px;
+  }
+
+  .article-link__rocket {
+    background: $color-light-gray url("../img/Rocket.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .article-link__rocket:hover {
+    background: $color-green url("../img/Rocket.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 1;
+  }
+
+  .article-link__atom {
+    background: $color-light-gray url("../img/Atom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .article-link__atom:hover {
+    background: $color-green url("../img/Atom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 1;
+  }
+
+  .article-link__atom-active {
+    background: $color-green url("../img/Atom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .article-link__atom-active:hover {
+    opacity: 1;
+  }
+
+  .article-link__activity {
+    background: $color-light-gray url("../img/Activity.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .article-link__activity:hover {
+    background: $color-green url("../img/Activity.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 1;
+  }
+
+  .article-link__cap {
+    background: $color-light-gray url("../img/Graduation_Cap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .article-link__cap:hover {
+    background: $color-green url("../img/Graduation_Cap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 1;
+  }
+
+  .article-title {
+    color: $color-black;
+    font-family: Raleway, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .article-parag {
+    color: $color-parag;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+}
+
