@@ -28,3 +28,9 @@
 .green {
   color: $color-green;
 }
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

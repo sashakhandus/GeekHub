@@ -1,0 +1,42 @@
+.footer {
+  padding-bottom: 179px;
+
+  .container {
+    background: url("../img/bgFooter-min.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    .footer-content{
+      padding-top: 70px;
+      padding-bottom: 490px;
+    }
+
+    .footer-parag {
+      display: inline-block;
+      color: $color-parag;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      margin-left: 20px;
+    }
+
+    .footer-link, .footer-link:visited, .footer-link:active {
+      color: $color-parag;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: none;
+      opacity: 0.45;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .footer-link:hover {
+      opacity: 1;
+    }
+  }
+}
+;
