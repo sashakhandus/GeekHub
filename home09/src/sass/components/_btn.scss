@@ -11,6 +11,9 @@
   border: 2px solid $color-green;
   border-radius: 60px;
   text-decoration: none;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .btn:hover {

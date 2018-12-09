@@ -12,6 +12,7 @@
 @import 'components/arrow-right';
 @import 'components/arrow-left';
 @import 'components/arrow-down';
+@import 'components/cart';
 
 @import 'layout/grid';
 @import 'layout/header';
@@ -19,13 +20,14 @@
 @import 'layout/section-header';
 
 
-@import 'pages/home';
-@import 'pages/aboutus';
-@import 'pages/lorem';
-@import 'pages/dolor';
-@import 'pages/alecto';
-@import 'pages/our-services';
-@import 'pages/meet-our-team';
-@import 'pages/dolor-map';
-@import 'pages/try';
-@import 'pages/footer';
+@import 'sections/home';
+@import 'sections/aboutus';
+@import 'sections/lorem';
+@import 'sections/dolor';
+@import 'sections/alecto';
+@import 'sections/our-services';
+@import 'sections/meet-our-team';
+@import 'sections/pricing';
+@import 'sections/dolor-map';
+@import 'sections/try';
+@import 'sections/footer';

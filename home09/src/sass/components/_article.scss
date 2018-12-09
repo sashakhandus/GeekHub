@@ -12,14 +12,18 @@
   }
 
   .article-link__rocket {
-    background: $color-light-gray url("../img/Rocket.png");
+    background-color: $color-light-gray;
+    background-image: url("../img/Rocket.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
   }
 
   .article-link__rocket:hover {
-    background: $color-green url("../img/Rocket.png");
+    background-color: $color-green;
+    background-image: url("../img/Rocket.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -27,14 +31,18 @@
   }
 
   .article-link__atom {
-    background: $color-light-gray url("../img/Atom.png");
+    background-color: $color-light-gray;
+    background-image: url("../img/Atom.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
   }
 
   .article-link__atom:hover {
-    background: $color-green url("../img/Atom.png");
+    background-color: $color-green;
+    background-image: url("../img/Atom.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -42,10 +50,13 @@
   }
 
   .article-link__atom-active {
-    background: $color-green url("../img/Atom.png");
+    background-color: $color-green;
+    background-image: url("../img/Atom.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
   }
 
   .article-link__atom-active:hover {
@@ -53,14 +64,18 @@
   }
 
   .article-link__activity {
-    background: $color-light-gray url("../img/Activity.png");
+    background-color: $color-light-gray;
+    background-image: url("../img/Activity.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
   }
 
   .article-link__activity:hover {
-    background: $color-green url("../img/Activity.png");
+    background-color: $color-green;
+    background-image: url("../img/Activity.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -68,14 +83,18 @@
   }
 
   .article-link__cap {
-    background: $color-light-gray url("../img/Graduation_Cap.png");
+    background-color: $color-light-gray;
+    background-image: url("../img/Graduation_Cap.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
   }
 
   .article-link__cap:hover {
-    background: $color-green url("../img/Graduation_Cap.png");
+    background-color: $color-green;
+    background-image: url("../img/Graduation_Cap.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;

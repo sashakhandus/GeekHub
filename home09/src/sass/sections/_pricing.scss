@@ -1,0 +1,17 @@
+.pricing {
+  background: $color-bg;
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  .pricing-list {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .pricing-item {
+    margin: 0;
+  }
+}
