@@ -3,3 +3,18 @@
 @import 'utils/variables';
 
 @import 'base/basic';
+@import 'base/_typography.scss';
+
+@import 'components/menu';
+@import 'components/btn';
+@import 'components/controls';
+
+@import 'layout/header';
+@import 'layout/lets-rock';
+@import 'layout/introducing';
+@import 'layout/consert';
+@import 'layout/videos';
+@import 'layout/founder';
+@import 'layout/instagram';
+@import 'layout/songs';
+

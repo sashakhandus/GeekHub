@@ -1,0 +1,35 @@
+.founder {
+  height: 35vh;
+  background: $color-secondary;
+  margin: 0;
+  padding: 30px 50px;
+  background-image: url("../img/bg-our-founder-min.png");
+  background-repeat: no-repeat;
+  background-position: 200px 0;
+  background-size: contain;
+  position: relative;
+
+  h2 {
+    width: 60%;
+    margin: 0;
+    margin-top: 70px;
+    line-height: 50px;
+  }
+
+  p {
+    width: 50%;
+    margin: 0;
+    margin-top: 30px;
+    line-height: 40px;
+  }
+
+  .btn-founder {
+    margin-top: 70px;
+  }
+
+  .btn-founder:hover {
+    opacity: 0.9;
+  }
+
+}
+

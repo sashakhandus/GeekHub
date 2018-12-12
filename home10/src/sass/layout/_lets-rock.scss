@@ -1,0 +1,31 @@
+.lets-rock {
+  height: 40vh;
+  background: url("../img/bg-home-min.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  .btn-lets-rock {
+    display: inline-block;
+    background: $color-bg;
+    color: $color-primary;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    margin: 0;
+
+    .text-spechial {
+      display: block;
+    }
+  }
+}

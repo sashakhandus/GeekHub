@@ -1,0 +1,88 @@
+.consert {
+  box-sizing: border-box;
+  padding: 20px 50px;
+
+  .consert-slider {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .consert-item {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .consert-img {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .consert-date {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .consert-day {
+    margin: 0;
+  }
+
+  .consert-month {
+    margin: 0;
+  }
+
+  .consert-content {
+    text-align: left;
+  }
+
+  .consert-title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .consert-descr {
+    p {
+      padding-left: 20px;
+    }
+  }
+
+  .consert-info {
+    display: flex;
+  }
+
+  .consert-purchase {
+    text-align: center;
+  }
+
+  .btn-consert {
+    background: $color-bg ;
+    color: $color-primary;
+    margin-top: 30px;
+  }
+
+  .consert-total {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 5px;
+    background-color: $color-bg-secondary;
+  }
+
+  .consert-drag {
+    width: 30%;
+    height: 5px;
+    background-color: $color-bg;
+  }
+
+}

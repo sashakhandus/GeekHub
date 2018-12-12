@@ -1,0 +1,192 @@
+.menu {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.65px;
+
+  a {
+    color: $color-primary;
+  }
+}
+
+.social-list {
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  a {
+    color: $color-primary;
+  }
+}
+
+.btn {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: $color-bg;
+}
+
+.lets-rock {
+  h1 {
+    color: $color-bg;
+    font-family: Oswald, sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    .text-spechial {
+      color: $color-secondary;
+      font-family: "Great Vibes", sans-serif;
+      font-size: 60px;
+      font-weight: 400;
+      text-transform: none;
+    }
+  }
+}
+
+  .section-title {
+    color: $color-secondary;
+    font-family: Oswald, sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+
+    .special-title {
+      display: block;
+      color: $color-bg;
+      font-family: "Great Vibes", sans-serif;
+      font-size: 52px;
+      font-weight: 400;
+      letter-spacing: 3.2px;
+      text-transform: none;
+    }
+  }
+
+  .introducing-item-info {
+    h3 {
+      color: $color-primary;
+      font-family: Oswald, sans-serif;
+      font-size: 42px;
+      font-weight: 400;
+    }
+
+    p {
+      color: $color-primary;
+      font-family: "Droid Sans", sans-serif;
+      font-weight: 200;
+      font-size: 36px;
+    }
+
+    .social-list {
+      font-size: 58px;
+
+      span {
+        font-size: 38px;
+      }
+    }
+  }
+
+  .controls {
+    .control-right {
+      color: $color-primary;
+      font-size: 60px;
+    }
+
+    .control-left {
+      color: $color-primary;
+      font-size: 60px;
+    }
+  }
+
+  .consert {
+    .consert-day {
+      color: $color-primary;
+      font-family: Oswald, sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+    }
+
+    .consert-month {
+      color: $color-primary;
+      font-family: Oswald, sans-serif;
+      font-size: 55px;
+      font-weight: 700;
+      letter-spacing: 3.2px;
+    }
+
+    .consert-title {
+      color: $color-secondary;
+      font-family: Oswald, sans-serif;
+      font-size: 45px;
+      font-weight: 500;
+    }
+
+    p {
+      color: $color-secondary;
+      font-family: "Droid Sans", sans-serif;
+      font-size: 35px;
+      font-weight: 400;
+    }
+  }
+
+  .founder {
+    h2 {
+      color: $color-primary;
+      font-family: Oswald, sans-serif;
+      font-size: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $color-primary;
+      font-family: "Droid Sans", sans-serif;
+      font-size: 30px;
+    }
+
+    .spacial-text{
+      color: $color-primary;
+      font-family: "Great Vibes", sans-serif;
+      font-size: 35px;
+      font-weight: 400;
+    }
+  }
+
+  .songs {
+    .songs-list {
+      p {
+        color: $color-secondary;
+        font-family: "Droid Sans", sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+      }
+
+      .songs-item:before {
+        color: $color-secondary;
+        font-family: "Droid Sans", sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

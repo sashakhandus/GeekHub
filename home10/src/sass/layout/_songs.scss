@@ -1,0 +1,37 @@
+.songs {
+  margin: 0;
+  padding: 30px 50px;
+
+  .songs-img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .songs-list {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+
+    .songs-item {
+      display: block;
+      padding-left: 20px;
+      border-bottom: 1px solid #999999;
+    }
+
+    .songs-item:before {
+        content: counter(item, decimal-leading-zero) " : ";
+        counter-increment: item;
+    }
+
+    p {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+  }
+}
