@@ -5,7 +5,12 @@
   border-radius: 60px;
   color: $color-bg;
   text-decoration: none;
-}
+
+  @include respond-to('large') {
+    padding: 18px 40px;
+    border-radius: 50px;
+  }
+  }
 
 .btn:hover {
   opacity: 0.9;

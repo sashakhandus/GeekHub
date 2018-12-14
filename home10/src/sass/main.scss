@@ -1,6 +1,7 @@
 @import "normalize/import-now";
 
 @import 'utils/variables';
+@import 'utils/mixins';
 
 @import 'base/basic';
 @import 'base/_typography.scss';
@@ -12,9 +13,9 @@
 @import 'layout/header';
 @import 'layout/lets-rock';
 @import 'layout/introducing';
-@import 'layout/consert';
-@import 'layout/videos';
+@import 'layout/consert-video';
 @import 'layout/founder';
-@import 'layout/instagram';
-@import 'layout/songs';
+@import 'layout/songs-instagram';
+@import 'layout/download';
+@import 'layout/footer';
 

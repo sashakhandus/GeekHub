@@ -2,3 +2,12 @@ $color-primary: #ffffff;
 $color-bg: #df001f;
 $color-secondary: #333333;
 $color-bg-secondary: #e9e9e9;
+$color-placeholder: #282828;
+$color-line: #dfdfdf;
+
+
+$breakpoints: (
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
+);

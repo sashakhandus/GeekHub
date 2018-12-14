@@ -1,0 +1,74 @@
+.download {
+
+  .container {
+    margin: 0;
+    padding: 60px 50px;
+    background-image: url("../img/bg-download-min.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    @include respond-to('huge') {
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 70px 50px 110px;
+    }
+  }
+
+  .download-content {
+    max-width: 70%;
+    margin: 0 auto;
+
+    @include respond-to('huge') {
+      max-width: 730px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include respond-to('huge') {
+     margin-bottom: 10px;
+
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 40px;
+
+    @include respond-to('huge') {
+      margin-bottom: 35px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: 162px;
+    height: 50px;
+  }
+
+  .download-app-store {
+    background:  url("../img/app-store.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .download-google-play {
+    background:  url("../img/google-play.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+
+    @include respond-to('huge') {
+      margin-left: 5px;
+    }
+  }
+}
