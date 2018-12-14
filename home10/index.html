@@ -12,43 +12,43 @@
 <body>
 
 <header>
-        <ul class="menu">
-            <li>
-                <a href="#">Home</a>
+    <div class="logo">
+        <a href="#"><img class="logo-img" src="assets/img/Logo.png"></a>
+    </div>
+    <ul class="menu">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Events</a>
+        </li>
+        <li>
+            <a href="#">Gallery</a>
+        </li>
+        <li>
+            <a href="#">News</a>
+        </li>
+        <li>
+            <a href="#">Albums</a>
+        </li>
+        <li>
+            <a href="#">Pages</a>
+        </li>
+    </ul>
+    <div class="social">
+        <ul class="social-list">
+            <li class="social-item">
+                <a class="social-link link-facebook" href="#"><i class="fab fa-facebook-f"></i><span> 32k</span></a>
             </li>
-            <li>
-                <a href="#">Events</a>
+            <li class="social-item">
+                <a class="social-link link-twitter" href="#"><i class="fab fa-twitter"></i><span> 55k</span></a>
             </li>
-            <li>
-                <a href="#">Gallery</a>
-            </li>
-            <li>
-                <a href="#">News</a>
-            </li>
-            <li>
-                <a href="#">Albums</a>
-            </li>
-            <li>
-                <a href="#">Pages</a>
+            <li class="social-item">
+                <a class="social-link link-google" href="#"><i class="fab fa-google-plus-g"></i><span> 23k</span></a>
             </li>
         </ul>
-        <div class="logo">
-            <a href="#"><img class="logo-img" src="assets/img/Logo.png"></a>
-        </div>
-        <div class="social">
-            <ul class="social-list">
-                <li class="social-item">
-                    <a class="social-link link-facebook" href="#"><i class="fab fa-facebook-f"></i><span> 32k</span></a>
-                </li>
-                <li class="social-item">
-                    <a class="social-link link-twitter" href="#"><i class="fab fa-twitter"></i><span> 55k</span></a>
-                </li>
-                <li class="social-item">
-                    <a class="social-link link-google" href="#"><i class="fab fa-google-plus-g"></i><span> 23k</span></a>
-                </li>
-            </ul>
-            <a class="btn btn-header" href="#">Purchase ticket</a>
-        </div>
+        <a class="btn btn-header" href="#">Purchase ticket</a>
+    </div>
 </header>
 
 <section class="lets-rock">
@@ -199,10 +199,15 @@
     <div class="container">
         <div class="songs">
             <h2 class="section-title">Popular<span class="special-title">Songs</span></h2>
-            <picture>
-                <img class="songs-img" src="assets/img/songs-img.png" alt="songs img">
-            </picture>
-            <ul class="songs-list">
+            <div class="songs-pictures">
+                <picture>
+                    <img class="songs-album" src="assets/img/Album-min.png" alt="Album img">
+                </picture>
+                <picture>
+                    <img class="songs-img" src="assets/img/songs-img.png" alt="songs img">
+                </picture>
+            </div>
+            <ol class="songs-list">
                 <li class="songs-item">
                     <a href="#"><p> My heart is dancing</p></a>
                 </li>
@@ -239,7 +244,7 @@
                 <li class="songs-item">
                     <a href="#"><p> Hello It’s me</p></a>
                 </li>
-            </ul>
+            </ol>
         </div>
         <div class="instagram">
             <h2 class="section-title">Introducing<span class="special-title">Our Members</span></h2>

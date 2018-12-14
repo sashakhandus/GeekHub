@@ -1,79 +1,152 @@
-.songs {
-  margin: 0;
-  padding: 30px 50px;
+.songs-instagram {
 
-  .songs-img {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-  }
+  .container {
 
-  .songs-list {
-    list-style-type: none;
-    counter-reset: item;
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-
-    .songs-item {
-      display: block;
-      padding-left: 20px;
-      border-bottom: 1px solid #999999;
+    @include respond-to('medium') {
     }
 
-    .songs-item:before {
-        content: counter(item, decimal-leading-zero) " : ";
-        counter-increment: item;
+    @include respond-to('large') {
     }
 
-    p {
-      display: inline-block;
+    @include respond-to('huge') {
+      width: 1200px;
+      margin: 0 auto;
+      padding-top: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .songs {
       margin: 0;
-      padding: 0;
-      padding-bottom: 15px;
-      padding-top: 15px;
-    }
+      padding: 30px 50px;
 
-    a:hover {
-      opacity: 0.7;
-    }
-  }
-}
+      @include respond-to('huge') {
+        flex-basis: 775px;
+        max-width: 775px;
+        padding: 0;
+      }
+
+      .section-title {
+        margin: 0;
+        margin-bottom: 30px;
+      }
+
+      .songs-pictures {
+        @include respond-to('huge') {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        .songs-album {
+          display: none;
+
+          @include respond-to('huge') {
+            display: inline-block;
+            flex-basis: 120px;
+          }
+        }
+
+        .songs-img {
+          display: inline-block;
+          width: 100%;
+          height: auto;
+
+          @include respond-to('huge') {
+            flex-basis: 635px;
+          }
+        }
+      }
+
+        .songs-list {
+          list-style-type: none;
+          counter-reset: item;
+          margin: 0;
+          padding: 0;
+          margin-top: 30px;
 
 
+          @include respond-to('huge') {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-height: 151px;
+          }
 
-.instagram {
-  margin: 0;
-  padding: 30px 50px;
+          .songs-item {
+            display: block;
+            padding-left: 20px;
+            border-bottom: 1px solid #999999;
 
-  .section-title {
-    margin: 0;
-    margin-bottom: 30px;
-  }
+            @include respond-to('huge') {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              max-height: 151px;
+            }
+          }
 
-  .instagram-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+          .songs-item:before {
+            content: counter(item, decimal-leading-zero) " : ";
+            counter-increment: item;
+          }
 
-    .instagram-link {
-      display: inline-block;
-      flex-basis: 48%;
-      margin-bottom: 4%;
-    }
+          p {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 15px;
+            padding-top: 15px;
+          }
 
-    .last-row {
-      margin-bottom: 0;
-    }
+          a:hover {
+            opacity: 0.7;
+          }
+        }
 
-    .instagram-img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
+      .instagram {
+        //display: block;
+        margin: 0;
+        padding: 30px 50px;
+
+        @include respond-to('huge') {
+          flex-basis: 370px;
+          padding: 0;
+          text-align: right;
+        }
+
+        .section-title {
+          margin: 0;
+          margin-bottom: 30px;
+        }
+
+        .instagram-list {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+
+          .instagram-link {
+            display: inline-block;
+            flex-basis: 48%;
+            margin-bottom: 4%;
+          }
+
+          .last-row {
+            margin-bottom: 0;
+          }
+
+          .instagram-img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }
