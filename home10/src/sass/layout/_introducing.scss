@@ -1,39 +1,75 @@
 .introducing {
-  height: 100vh;
+  //height: 100vh;
   box-sizing: border-box;
-  padding: 20px 50px;
+  padding: 30px 20px;
   position: relative;
 
-  @include respond-to('huge') {
-   height: auto;
+  @include respond-to('medium') {
+    height: auto;
     padding: 0;
   }
 
+  @include respond-to('large') {
+  }
+
+  @include respond-to('huge') {
+  }
+
     .container {
+      position: relative;
+
+      @include respond-to('medium') {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px 15px;
+        position: relative;
+        border-bottom: 1px solid $color-line;
+      }
+
+      @include respond-to('large') {
+        max-width: 1000px;
+        padding: 50px 15px;
+      }
+
     @include respond-to('huge') {
       max-width: 1200px;
-      margin: 0 auto;
       padding-top: 100px;
       padding-bottom: 100px;
-      position: relative;
-      border-bottom: 1px solid $color-line;
     }
   }
 
   .controls {
     position: absolute;
-    top: 50px;
-    right: 180px;
+    top: 20px;
+    right: 0;
+
+    @include respond-to('medium') {
+      top: 85px;
+      right: 15px;
+    }
+
+    @include respond-to('large') {
+      top: 95px;
+      right: 15px;
+    }
 
     @include respond-to('huge') {
       top: 160px;
-      right: 0;
+      right: 15px;
     }
   }
 
   .section-title {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
+    @include respond-to('medium') {
+      margin-bottom: 20px;
+    }
+
+    @include respond-to('large') {
+      margin-bottom: 25px;
+    }
 
     @include respond-to('huge') {
       margin-bottom: 40px;
@@ -45,6 +81,20 @@
     margin: 0;
     padding: 0;
 
+    @include respond-to('medium') {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @include respond-to('large') {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     @include respond-to('huge') {
       display: flex;
       justify-content: space-between;
@@ -54,11 +104,21 @@
   }
 
   .introducing-item {
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     margin-bottom: 30px;
     position: relative;
+
+    @include respond-to('medium') {
+      max-width: 31.5%;
+      margin: 0;
+    }
+
+    @include respond-to('large') {
+      max-width: 31.5%;
+      margin: 0;
+    }
 
     @include respond-to('huge') {
       max-width: 31.5%;
@@ -75,19 +135,27 @@
   .introducing-item:last-child {
     display: none;
 
-    @include respond-to('huge') {
-     display: inline-block;
+    @include respond-to('medium') {
+      display: inline-block;
     }
   }
 
   .introducing-item-info {
     background: $color-bg;
     min-height: 10%;
-    padding: 20px 20px;
+    padding: 10px 10px;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
+
+    @include respond-to('medium') {
+      padding: 15px 15px;
+    }
+
+    @include respond-to('large') {
+      padding: 15px 15px;
+    }
 
     @include respond-to('huge') {
       padding: 15px 15px;
@@ -105,7 +173,15 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      margin-top: 30px;
+      margin-top: 15px;
+
+      @include respond-to('medium') {
+        margin-top: 20px;
+      }
+
+      @include respond-to('large') {
+        margin-top: 20px;
+      }
 
       @include respond-to('huge') {
         margin-top: 20px;
@@ -114,7 +190,19 @@
 
     .social-item {
       display: inline-block;
-      margin-right: 40px;
+      margin-right: 10px;
+
+      @include respond-to('medium') {
+        margin-right: 20px;
+      }
+
+      @include respond-to('large') {
+        margin-right: 30px;
+      }
+
+      @include respond-to('huge') {
+        margin-right: 40px;
+      }
     }
 
     .social-item:last-child {

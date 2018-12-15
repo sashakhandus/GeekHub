@@ -1,29 +1,39 @@
 .download {
 
+  background-image: url("../img/bg-download-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   .container {
     margin: 0;
-    padding: 60px 50px;
-    background-image: url("../img/bg-download-min.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    padding: 60px 30px;
     text-align: center;
+
+    @include respond-to('medium') {
+      max-width: 800px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 70px 50px 90px;
+    }
+
+    @include respond-to('large') {
+      max-width: 1000px;
+      padding: 70px 50px 100px;
+    }
 
     @include respond-to('huge') {
       max-width: 1200px;
-      margin: 0 auto;
-      box-sizing: border-box;
       padding: 70px 50px 110px;
     }
   }
 
   .download-content {
-    max-width: 70%;
     margin: 0 auto;
 
     @include respond-to('huge') {
+      padding: 0;
       max-width: 730px;
-      margin: 0 auto;
       box-sizing: border-box;
     }
   }
@@ -34,7 +44,6 @@
 
     @include respond-to('huge') {
      margin-bottom: 10px;
-
     }
   }
 
@@ -48,9 +57,14 @@
   }
 
   a {
-    display: inline-block;
+    display: block;
     width: 162px;
     height: 50px;
+
+    @include respond-to('medium') {
+     display: inline-block;
+    }
+
   }
 
   .download-app-store {
@@ -58,6 +72,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    @include respond-to('medium') {
+      margin-bottom: 0;
+    }
   }
 
   .download-google-play {
@@ -65,7 +85,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-left: 20px;
+    margin: 0 auto;
+
+    @include respond-to('medium') {
+      margin-left: 5px;
+    }
+
+    @include respond-to('large') {
+      margin-left: 5px;
+    }
 
     @include respond-to('huge') {
       margin-left: 5px;

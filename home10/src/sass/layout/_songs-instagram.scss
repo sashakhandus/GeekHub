@@ -105,9 +105,9 @@
           }
         }
 
-      .instagram {
-        //display: block;
-        margin: 0;
+      .insta {
+        display: block;
+        margin: 0 auto;
         padding: 30px 50px;
 
         @include respond-to('huge') {
@@ -141,7 +141,7 @@
 
           .instagram-img {
             display: block;
-            width: 100%;
+            //width: 100%;
             height: auto;
             margin: 0;
           }

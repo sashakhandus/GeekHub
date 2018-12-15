@@ -1,11 +1,11 @@
 .lets-rock {
-  height: 40vh;
   background: url("../img/bg-home-min.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   margin: 0;
-  padding-top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
 
 
@@ -25,19 +25,11 @@
     padding-bottom: 175px;
   }
 
-  .btn-lets-rock {
-    display: inline-block;
-    background: $color-bg;
-    color: $color-primary;
+  .content {
+    text-align: center;
+
   }
 
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 
   h1 {
     margin: 0;
@@ -45,5 +37,12 @@
     .text-spechial {
       display: block;
     }
+  }
+
+  .btn-lets-rock {
+    display: inline-block;
+    background: $color-bg;
+    color: $color-primary;
+    margin-top: 20px;
   }
 }

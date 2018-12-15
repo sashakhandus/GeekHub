@@ -1,6 +1,6 @@
 .menu {
   font-family: "Droid Sans", sans-serif;
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.65px;
@@ -26,7 +26,7 @@
 
 .social-list {
   font-family: "Open Sans", sans-serif;
-  font-size: 48px;
+  font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
 
@@ -41,6 +41,11 @@
   @include respond-to('huge') {
       font-size: 14px;
   }
+
+    .fab {
+      font-size: 26px;
+      margin-right: 5px;
+    }
 
   @include respond-to('medium') {
     .fab {
@@ -70,7 +75,7 @@
 
 .btn {
   font-family: "Droid Sans", sans-serif;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
@@ -94,7 +99,7 @@
   h1 {
     color: $color-bg;
     font-family: Oswald, sans-serif;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
 
@@ -113,7 +118,7 @@
     .text-spechial {
       color: $color-secondary;
       font-family: "Great Vibes", sans-serif;
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 400;
       text-transform: none;
 
@@ -128,7 +133,6 @@
       @include respond-to('huge') {
         font-size: 80px;
       }
-
     }
   }
 }
@@ -136,10 +140,18 @@
   .section-title {
     color: $color-secondary;
     font-family: Oswald, sans-serif;
-    font-size: 52px;
+    font-size: 32px;
     font-weight: 400;
     letter-spacing: 3.2px;
     text-transform: uppercase;
+
+    @include respond-to('medium') {
+      font-size: 26px;
+    }
+
+    @include respond-to('large') {
+      font-size: 30px;
+    }
 
     @include respond-to('huge') {
       font-size: 32px;
@@ -149,10 +161,18 @@
       display: block;
       color: $color-bg;
       font-family: "Great Vibes", sans-serif;
-      font-size: 52px;
+      font-size: 32px;
       font-weight: 400;
       letter-spacing: 3.2px;
       text-transform: none;
+
+      @include respond-to('medium') {
+        font-size: 26px;
+      }
+
+      @include respond-to('large') {
+        font-size: 30px;
+      }
 
       @include respond-to('huge') {
         font-size: 32px;
@@ -164,8 +184,16 @@
     h3 {
       color: $color-primary;
       font-family: Oswald, sans-serif;
-      font-size: 42px;
+      font-size: 26px;
       font-weight: 400;
+
+      @include respond-to('medium') {
+        font-size: 22px;
+      }
+
+      @include respond-to('large') {
+        font-size: 22px;
+      }
 
       @include respond-to('huge') {
         font-size: 22px;
@@ -176,7 +204,15 @@
       color: $color-primary;
       font-family: "Droid Sans", sans-serif;
       font-weight: 200;
-      font-size: 36px;
+      font-size: 22px;
+
+      @include respond-to('medium') {
+        font-size: 16px;
+      }
+
+      @include respond-to('large') {
+        font-size: 16px;
+      }
 
       @include respond-to('huge') {
         font-size: 16px;
@@ -184,14 +220,30 @@
     }
 
     .social-list {
-      font-size: 58px;
+      font-size: 26px;
+
+      @include respond-to('medium') {
+        font-size: 24px;
+      }
+
+      @include respond-to('large') {
+        font-size: 24px;
+      }
 
       @include respond-to('huge') {
         font-size: 24px;
       }
 
       span {
-        font-size: 38px;
+        font-size: 14px;
+
+        @include respond-to('medium') {
+          font-size: 14px;
+        }
+
+        @include respond-to('large') {
+          font-size: 14px;
+        }
 
         @include respond-to('huge') {
           font-size: 14px;
@@ -203,20 +255,41 @@
   .controls {
     .control-right {
       color: $color-primary;
-      font-size: 60px;
+      font-size: 40px;
+
+      @include respond-to('medium') {
+        font-size: 35px;
+        font-weight: 200;
+      }
+
+      @include respond-to('large') {
+        font-size: 35px;
+        font-weight: 200;
+      }
 
       @include respond-to('huge') {
       font-size: 35px;
         font-weight: 200;
-    }
+      }
     }
 
     .control-left {
       color: $color-primary;
-      font-size: 60px;
+      font-size: 40px;
+
+      @include respond-to('medium') {
+        font-size: 35px;
+        font-weight: 200;
+      }
+
+      @include respond-to('large') {
+        font-size: 35px;
+        font-weight: 200;
+      }
 
       @include respond-to('huge') {
         font-size: 35px;
+        font-weight: 200;
       }
     }
   }
@@ -330,8 +403,16 @@
     h2 {
       color: $color-primary;
       font-family: Oswald, sans-serif;
-      font-size: 40px;
+      font-size: 32px;
       font-weight: 500;
+
+      @include respond-to('medium') {
+        font-size: 32px;
+      }
+
+      @include respond-to('large') {
+        font-size: 32px;
+      }
 
       @include respond-to('huge') {
         font-size: 32px;
@@ -341,9 +422,17 @@
     p {
       color: $color-primary;
       font-family: "Droid Sans", sans-serif;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 400;
       letter-spacing: 1.1px;
+
+      @include respond-to('medium') {
+        font-size: 22px;
+      }
+
+      @include respond-to('large') {
+        font-size: 22px;
+      }
 
       @include respond-to('huge') {
         font-size: 22px;
@@ -355,9 +444,17 @@
     input {
       color: $color-secondary;
       font-family: "Droid Sans", sans-serif;
-      font-size: 36px;
+      font-size: 20px;
       font-weight: 400;
       letter-spacing: 3px;
+
+      @include respond-to('medium') {
+        font-size: 16px;
+      }
+
+      @include respond-to('large') {
+        font-size: 16px;
+      }
 
       @include respond-to('huge') {
         font-size: 16px;
@@ -367,9 +464,17 @@
     input::placeholder {
       color: $color-placeholder;
       font-family: "Droid Sans", sans-serif;
-      font-size: 36px;
+      font-size: 20px;
       font-weight: 400;
       letter-spacing: 3px;
+
+      @include respond-to('medium') {
+        font-size: 16px;
+      }
+
+      @include respond-to('large') {
+        font-size: 16px;
+      }
 
       @include respond-to('huge') {
         font-size: 16px;
@@ -379,10 +484,18 @@
     .menu {
       display: inline;
       font-family: "Droid Sans", sans-serif;
-      font-size: 26px;
+      font-size: 16px;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.65px;
+
+      @include respond-to('medium') {
+        font-size: 13px;
+      }
+
+      @include respond-to('large') {
+        font-size: 13px;
+      }
 
       @include respond-to('huge') {
         font-size: 13px;
@@ -396,9 +509,17 @@
     h2 {
       color: $color-secondary;
       font-family: "Droid Sans", sans-serif;
-      font-size: 24px;
+      font-size: 14px;
       font-weight: 400;
       letter-spacing: 0.65px;
+
+      @include respond-to('medium') {
+        font-size: 13px;
+      }
+
+      @include respond-to('large') {
+        font-size: 13px;
+      }
 
       @include respond-to('huge') {
         font-size: 13px;
@@ -408,9 +529,17 @@
     .spacial-text {
       color: $color-bg;
       font-family: "Great Vibes", sans-serif;
-      font-size: 34px;
+      font-size: 24px;
       font-weight: 400;
       letter-spacing: 1.4px;
+
+      @include respond-to('medium') {
+        font-size: 28px;
+      }
+
+      @include respond-to('large') {
+        font-size: 28px;
+      }
 
       @include respond-to('huge') {
         font-size: 28px;
