@@ -171,23 +171,13 @@
     }
 
     .consert-info {
-      //display: flex;
-
-      div {
-        display: flex;
-        justify-content: left;
-      }
-
-      p {
-        margin: 0;
-        margin-bottom: 10px;
+      td {
+        vertical-align: top;
       }
 
       .consert-location {
-        padding-left: 30px;
+        padding-left: 20px;
       }
-
-
     }
 
     .consert-purchase {
@@ -279,22 +269,18 @@
 
       @include respond-to('small') {
         top: 40px;
-        right: 0;
       }
 
       @include respond-to('medium') {
         top: 30px;
-        right: 0;
       }
 
       @include respond-to('large') {
         top: 50px;
-        right: 0;
       }
 
       @include respond-to('huge') {
         top: 70px;
-        right: 0;
       }
     }
 
@@ -303,18 +289,6 @@
       position: relative;
 
       @include respond-to('small') {
-        width: 100%;
-      }
-
-      @include respond-to('medium') {
-        width: 90%;
-      }
-
-      @include respond-to('large') {
-        width: 100%;
-      }
-
-      @include respond-to('huge') {
         width: 100%;
       }
 

@@ -72,11 +72,6 @@
   @include respond-to('medium') {
     font-size: 12px;
   }
-
-  @include respond-to('huge') {
-    font-size: 12px;
-  }
-
 }
 
 .lets-rock {
@@ -92,7 +87,7 @@
     }
 
     @include respond-to('large') {
-      font-size: 90px;
+      font-size: 80px;
     }
 
     @include respond-to('huge') {
@@ -106,12 +101,12 @@
       font-weight: 400;
       text-transform: none;
 
-      @include respond-to('huge') {
+      @include respond-to('medium') {
         font-size: 50px;
       }
 
-      @include respond-to('huge') {
-        font-size: 70px;
+      @include respond-to('large') {
+        font-size: 60px;
       }
 
       @include respond-to('huge') {
@@ -174,14 +169,6 @@
       @include respond-to('medium') {
         font-size: 22px;
       }
-
-      @include respond-to('large') {
-        font-size: 22px;
-      }
-
-      @include respond-to('huge') {
-        font-size: 22px;
-      }
     }
 
     p {
@@ -193,14 +180,6 @@
       @include respond-to('medium') {
         font-size: 16px;
       }
-
-      @include respond-to('large') {
-        font-size: 16px;
-      }
-
-      @include respond-to('huge') {
-        font-size: 16px;
-      }
     }
 
     .social-list {
@@ -210,28 +189,8 @@
         font-size: 24px;
       }
 
-      @include respond-to('large') {
-        font-size: 24px;
-      }
-
-      @include respond-to('huge') {
-        font-size: 24px;
-      }
-
       span {
         font-size: 14px;
-
-        @include respond-to('medium') {
-          font-size: 14px;
-        }
-
-        @include respond-to('large') {
-          font-size: 14px;
-        }
-
-        @include respond-to('huge') {
-          font-size: 14px;
-        }
       }
     }
   }
@@ -335,39 +294,15 @@
       @include respond-to('small') {
         font-size: 22px;
       }
-
-      @include respond-to('medium') {
-        font-size: 22px;
-      }
-
-      @include respond-to('large') {
-        font-size: 22px;
-      }
-
-      @include respond-to('huge') {
-        font-size: 22px;
-      }
     }
 
-    p {
+    td {
       color: $color-secondary;
       font-family: "Droid Sans", sans-serif;
       font-size: 16px;
       font-weight: 400;
 
       @include respond-to('small') {
-        font-size: 16px;
-      }
-
-      @include respond-to('medium') {
-        font-size: 16px;
-      }
-
-      @include respond-to('large') {
-        font-size: 16px;
-      }
-
-      @include respond-to('huge') {
         font-size: 16px;
       }
     }
