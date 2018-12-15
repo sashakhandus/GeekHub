@@ -3,6 +3,7 @@ footer {
   text-align: center;
 
   form {
+    box-sizing: border-box;
     max-width: 80%;
     border-bottom: 4px solid #999999;
     margin: 0 auto;
@@ -13,8 +14,15 @@ footer {
     justify-content: space-between;
     align-items: center;
 
+    @include respond-to('small') {
+      width: 430px;
+      margin-top: 80px;
+      margin-bottom: 65px;
+      padding-bottom: 14px;
+    }
+
     @include respond-to('medium') {
-      width: 530px;
+      width: 430px;
       margin-top: 80px;
       margin-bottom: 65px;
       padding-bottom: 14px;
@@ -37,13 +45,19 @@ footer {
 
   input[type="text"] {
     display: inline-block;
-    max-width: 460px;
+    width: 460px;
     line-height: 40px;
     border: none;
+
+    @include respond-to('small') {
+      line-height: 24px;
+      width: 400px;
+    }
 
     @include respond-to('medium') {
       line-height: 24px;
     }
+
   }
 
   input[type="submit"] {
@@ -92,9 +106,24 @@ footer {
       margin-bottom: 10px;
       line-height: normal;
 
-      @include respond-to('medium') {
+      @include respond-to('small') {
         display: inline-block;
         margin-right: 30px;
+      }
+
+      @include respond-to('medium') {
+        display: inline-block;
+        margin-right: 35px;
+      }
+
+      @include respond-to('large') {
+        display: inline-block;
+        margin-right: 40px;
+      }
+
+      @include respond-to('huge') {
+        display: inline-block;
+        margin-right: 45px;
       }
     }
 

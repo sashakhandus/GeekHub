@@ -1,27 +1,55 @@
 .consert-videos {
 
   .container {
-    @include respond-to('huge') {
-      max-width: 1200px;
-      padding-top: 90px;
-      padding-bottom: 90px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @include respond-to('small') {
+      max-width: 600px;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      margin: 0 auto;
+    }
+
+    @include respond-to('medium') {
+      max-width: 800px;
+      padding-top: 50px;
+      padding-bottom: 50px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
     }
-  }
 
-  .section-title {
-    margin: 0;
+    @include respond-to('large') {
+      max-width: 1000px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 
     @include respond-to('huge') {
-      margin-bottom: 40px;
+      max-width: 1200px;
+      padding-top: 90px;
+      padding-bottom: 90px;
     }
   }
 
   .consert {
     box-sizing: border-box;
-    padding: 20px 50px;
+
+    @include respond-to('small') {
+      padding: 0;
+      max-width: 770px;
+    }
+
+    @include respond-to('medium') {
+      padding: 0;
+      flex-basis: 66%;
+    }
+
+    @include respond-to('large') {
+      padding: 0;
+      flex-basis: 66%;
+    }
 
     @include respond-to('huge') {
       padding: 0;
@@ -38,20 +66,37 @@
       width: 70%;
       margin: 0 auto;
 
-      @include respond-to('huge') {
+      @include respond-to('small') {
+        margin: 0;
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      @include respond-to('medium') {
+        margin: 0;
+      }
+
+      @include respond-to('large') {
         width: auto;
         margin: 0;
         display: flex;
         align-items: flex-start;
       }
 
+      @include respond-to('huge') {
+        width: auto;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+      }
     }
 
     .consert-img {
       position: relative;
       margin-bottom: 20px;
 
-      @include respond-to('huge') {
+      @include respond-to('small') {
         margin-bottom: 0;
         display: inline-block;
       }
@@ -79,6 +124,24 @@
     .consert-content {
       text-align: left;
 
+      @include respond-to('small') {
+        display: block;
+        margin-top: 25px;
+        margin-left: 70px;
+      }
+
+      @include respond-to('medium') {
+        display: block;
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+
+      @include respond-to('large') {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+
       @include respond-to('huge') {
        display: inline-block;
         margin-top: 25px;
@@ -90,31 +153,48 @@
       margin: 0;
       margin-bottom: 20px;
 
+      @include respond-to('small') {
+        margin-bottom: 30px;
+      }
+
+      @include respond-to('medium') {
+        margin-bottom: 30px;
+      }
+
+      @include respond-to('large') {
+        margin-bottom: 30px;
+      }
+
       @include respond-to('huge') {
         margin-bottom: 30px;
       }
     }
 
-    p {
-      margin: 0;
-      margin-bottom: 10px;
-    }
-
-    .consert-descr {
-      p {
-        padding-left: 20px;
-      }
-    }
-
     .consert-info {
-      display: flex;
+      //display: flex;
+
+      div {
+        display: flex;
+        justify-content: left;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .consert-location {
+        padding-left: 30px;
+      }
+
+
     }
 
     .consert-purchase {
       text-align: center;
 
-      @include respond-to('huge') {
-       text-align: left;
+      @include respond-to('small') {
+        text-align: left;
       }
     }
 
@@ -122,6 +202,14 @@
       background: $color-bg;
       color: $color-primary;
       margin-top: 20px;
+
+      @include respond-to('small') {
+        text-align: left;
+      }
+
+      @include respond-to('medium') {
+        margin-bottom: 20px;
+      }
     }
 
     .consert-total {
@@ -130,6 +218,21 @@
       width: 100%;
       height: 5px;
       background-color: $color-bg-secondary;
+
+      @include respond-to('small') {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      @include respond-to('medium') {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      @include respond-to('large') {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
 
       @include respond-to('huge') {
         margin-top: 5px;
@@ -142,22 +245,52 @@
       height: 5px;
       background-color: $color-bg;
     }
-
   }
 
   .videos {
     box-sizing: border-box;
-    padding: 30px 50px;
+    padding: 30px 0;
     position: relative;
+
+    @include respond-to('small') {
+      margin: 0 auto;
+      margin-top: 50px;
+      padding: 0;
+    }
+
+    @include respond-to('medium') {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    @include respond-to('large') {
+      padding: 0;
+    }
 
     @include respond-to('huge') {
       padding: 0;
+      margin: 0;
     }
 
     .controls {
       position: absolute;
-      top: 50px;
-      right: 180px;
+      top: 70px;
+      right: 0;
+
+      @include respond-to('small') {
+        top: 40px;
+        right: 0;
+      }
+
+      @include respond-to('medium') {
+        top: 30px;
+        right: 0;
+      }
+
+      @include respond-to('large') {
+        top: 50px;
+        right: 0;
+      }
 
       @include respond-to('huge') {
         top: 70px;
@@ -166,9 +299,24 @@
     }
 
     .videos-content {
-      width: 100%;
       margin: 0 auto;
       position: relative;
+
+      @include respond-to('small') {
+        width: 100%;
+      }
+
+      @include respond-to('medium') {
+        width: 90%;
+      }
+
+      @include respond-to('large') {
+        width: 100%;
+      }
+
+      @include respond-to('huge') {
+        width: 100%;
+      }
 
       img {
         width: 100%;
@@ -177,10 +325,10 @@
       .btn-videos {
         box-sizing: border-box;
         display: inline-block;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         padding: 0;
-        padding-top: 18px;
+        padding-top: 10px;
         text-align: center;
         background: $color-bg;
         color: $color-primary;
@@ -190,11 +338,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        @include respond-to('huge') {
+        @include respond-to('small') {
+          width: 70px;
+          height: 70px;
+          padding-top: 12px;
+        }
+
+        @include respond-to('medium') {
           width: 60px;
           height: 60px;
           padding-top: 10px;
         }
+
       }
 
       .btn-videos:hover {

@@ -1,67 +1,109 @@
 .founder {
-  height: 35vh;
   margin: 0;
 
-
-  @include respond-to('huge') {
-    height: auto;
-  }
-
   .container {
-    background: $color-secondary;
     margin: 0;
     padding: 30px 50px;
     box-sizing: border-box;
     background-image: url("../img/bg-our-founder-min.png");
     background-repeat: no-repeat;
-    background-position: 200px 0;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-color:  $color-secondary;
     position: relative;
+
+    @include respond-to('small') {
+      padding: 50px 0 40px 70px;
+      max-width: 600px;
+      margin: 0 auto;
+      background-position: top right;
+      background-size: contain;
+    }
+
+    @include respond-to('medium') {
+      padding: 60px 0 50px 80px;
+      max-width: 800px;
+    }
+
+    @include respond-to('large') {
+      padding: 70px 0 60px 90px;
+      max-width: 1000px;
+    }
 
     @include respond-to('huge') {
       padding: 80px 0 70px 100px;
       max-width: 1200px;
-      margin: 0 auto;
-      background-position: top right;
     }
   }
 
   h2 {
-    width: 60%;
     margin: 0;
-    margin-top: 70px;
-    line-height: 50px;
+    margin-top: 30px;
+    line-height: 30px;
 
-    @include respond-to('huge') {
-     max-width: 560px;
+    @include respond-to('small') {
+      max-width: 560px;
+      margin-top: 0;
+      line-height: 28px;
+    }
+
+    @include respond-to('medium') {
+      max-width: 560px;
       margin-top: 0;
     }
   }
 
   p {
-    width: 50%;
     margin: 0;
     margin-top: 30px;
-    line-height: 40px;
+    line-height: 25px;
+
+    @include respond-to('small') {
+      max-width: 520px;
+      margin-top: 15px;
+      line-height: 25px;
+    }
+
+    @include respond-to('medium') {
+      max-width: 540px;
+      margin-top: 15px;
+      line-height: 25px;
+    }
+
+    @include respond-to('large') {
+      max-width: 540px;
+      margin-top: 15px;
+      line-height: 30px;
+    }
 
     @include respond-to('huge') {
       max-width: 560px;
       margin-top: 20px;
-      line-height: 30px;
     }
-
   }
 
   .btn-founder {
     margin-top: 70px;
 
+    @include respond-to('small') {
+      margin-top: 30px;
+    }
+
+    @include respond-to('medium') {
+      margin-top: 30px;
+    }
+
+    @include respond-to('large') {
+      margin-top: 30px;
+    }
+
     @include respond-to('huge') {
       margin-top: 40px;
     }
-  }
 
   .btn-founder:hover {
-    opacity: 0.9;
+    opacity: 0.7;
   }
+}
 }
 

@@ -1,15 +1,13 @@
 .menu {
   font-family: "Droid Sans", sans-serif;
-  font-size: 34px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.65px;
 
-
-  @include respond-to('medium') {
+  @include respond-to('small') {
     font-size: 16px;
   }
-
 
   @include respond-to('large') {
     font-size: 18px;
@@ -26,11 +24,11 @@
 
 .social-list {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
 
-  @include respond-to('medium') {
+  @include respond-to('small') {
     font-size: 16px;
   }
 
@@ -54,20 +52,6 @@
     }
   }
 
-  @include respond-to('large') {
-    .fab {
-      font-size: 24px;
-      margin-right: 5px;
-    }
-  }
-
-  @include respond-to('huge') {
-    .fab {
-      font-size: 24px;
-      margin-right: 5px;
-    }
-  }
-
   a {
     color: $color-primary;
   }
@@ -75,18 +59,18 @@
 
 .btn {
   font-family: "Droid Sans", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
   color: $color-bg;
 
-  @include respond-to('medium') {
-    font-size: 14px;
-  }
+  @include respond-to('small') {
+      font-size: 14px;
+    }
 
-  @include respond-to('large') {
-    font-size: 14px;
+  @include respond-to('medium') {
+    font-size: 12px;
   }
 
   @include respond-to('huge') {
@@ -301,6 +285,18 @@
       font-weight: 700;
       font-size: 80px;
 
+      @include respond-to('small') {
+        font-size: 45px;
+      }
+
+      @include respond-to('medium') {
+        font-size: 55px;
+      }
+
+      @include respond-to('large') {
+        font-size: 45px;
+      }
+
       @include respond-to('huge') {
         font-size: 45px;
       }
@@ -313,6 +309,18 @@
       font-weight: 700;
       letter-spacing: 3.2px;
 
+      @include respond-to('small') {
+        font-size: 32px;
+      }
+
+      @include respond-to('medium') {
+        font-size: 42px;
+      }
+
+      @include respond-to('large') {
+        font-size: 32px;
+      }
+
       @include respond-to('huge') {
         font-size: 32px;
       }
@@ -321,8 +329,20 @@
     .consert-title {
       color: $color-secondary;
       font-family: Oswald, sans-serif;
-      font-size: 45px;
+      font-size: 25px;
       font-weight: 500;
+
+      @include respond-to('small') {
+        font-size: 22px;
+      }
+
+      @include respond-to('medium') {
+        font-size: 22px;
+      }
+
+      @include respond-to('large') {
+        font-size: 22px;
+      }
 
       @include respond-to('huge') {
         font-size: 22px;
@@ -332,8 +352,20 @@
     p {
       color: $color-secondary;
       font-family: "Droid Sans", sans-serif;
-      font-size: 35px;
+      font-size: 16px;
       font-weight: 400;
+
+      @include respond-to('small') {
+        font-size: 16px;
+      }
+
+      @include respond-to('medium') {
+        font-size: 16px;
+      }
+
+      @include respond-to('large') {
+        font-size: 16px;
+      }
 
       @include respond-to('huge') {
         font-size: 16px;
@@ -345,9 +377,21 @@
     h2 {
       color: $color-primary;
       font-family: Oswald, sans-serif;
-      font-size: 40px;
+      font-size: 24px;
       font-weight: 500;
       text-transform: uppercase;
+
+      @include respond-to('small') {
+        font-size: 24px;
+      }
+
+      @include respond-to('medium') {
+        font-size: 28px;
+      }
+
+      @include respond-to('large') {
+        font-size: 32px;
+      }
 
       @include respond-to('huge') {
         font-size: 32px;
@@ -357,8 +401,20 @@
     p {
       color: $color-primary;
       font-family: "Droid Sans", sans-serif;
-      font-size: 30px;
+      font-size: 18px;
       font-weight: 300;
+
+      @include respond-to('small') {
+        font-size: 18px;
+      }
+
+      @include respond-to('medium') {
+        font-size: 20px;
+      }
+
+      @include respond-to('large') {
+        font-size: 22px;
+      }
 
       @include respond-to('huge') {
         font-size: 22px;
@@ -371,6 +427,14 @@
       font-size: 35px;
       font-weight: 400;
 
+      @include respond-to('medium') {
+        font-size: 40px;
+      }
+
+      @include respond-to('large') {
+        font-size: 45px;
+      }
+
       @include respond-to('huge') {
         font-size: 50px;
       }
@@ -382,8 +446,20 @@
       p {
         color: $color-secondary;
         font-family: "Droid Sans", sans-serif;
-        font-size: 36px;
+        font-size: 18px;
         font-weight: 400;
+
+        @include respond-to('small') {
+          font-size: 16px;
+        }
+
+        @include respond-to('medium') {
+          font-size: 16px;
+        }
+
+        @include respond-to('large') {
+          font-size: 16px;
+        }
 
         @include respond-to('huge') {
           font-size: 16px;
@@ -393,8 +469,13 @@
       .songs-item:before {
         color: $color-secondary;
         font-family: "Droid Sans", sans-serif;
-        font-size: 36px;
+        font-size: 18px;
         font-weight: 400;
+
+        @include respond-to('small') {
+          font-size: 16px;
+        }
+
       }
     }
   }
@@ -409,14 +490,6 @@
       @include respond-to('medium') {
         font-size: 32px;
       }
-
-      @include respond-to('large') {
-        font-size: 32px;
-      }
-
-      @include respond-to('huge') {
-        font-size: 32px;
-      }
     }
 
     p {
@@ -427,14 +500,6 @@
       letter-spacing: 1.1px;
 
       @include respond-to('medium') {
-        font-size: 22px;
-      }
-
-      @include respond-to('large') {
-        font-size: 22px;
-      }
-
-      @include respond-to('huge') {
         font-size: 22px;
       }
     }
@@ -448,15 +513,7 @@
       font-weight: 400;
       letter-spacing: 3px;
 
-      @include respond-to('medium') {
-        font-size: 16px;
-      }
-
-      @include respond-to('large') {
-        font-size: 16px;
-      }
-
-      @include respond-to('huge') {
+      @include respond-to('small') {
         font-size: 16px;
       }
     }
@@ -468,15 +525,7 @@
       font-weight: 400;
       letter-spacing: 3px;
 
-      @include respond-to('medium') {
-        font-size: 16px;
-      }
-
-      @include respond-to('large') {
-        font-size: 16px;
-      }
-
-      @include respond-to('huge') {
+      @include respond-to('small') {
         font-size: 16px;
       }
     }
@@ -489,15 +538,7 @@
       text-transform: uppercase;
       letter-spacing: 0.65px;
 
-      @include respond-to('medium') {
-        font-size: 13px;
-      }
-
-      @include respond-to('large') {
-        font-size: 13px;
-      }
-
-      @include respond-to('huge') {
+      @include respond-to('small') {
         font-size: 13px;
       }
 
@@ -513,15 +554,7 @@
       font-weight: 400;
       letter-spacing: 0.65px;
 
-      @include respond-to('medium') {
-        font-size: 13px;
-      }
-
-      @include respond-to('large') {
-        font-size: 13px;
-      }
-
-      @include respond-to('huge') {
+      @include respond-to('small') {
         font-size: 13px;
       }
     }
@@ -533,17 +566,10 @@
       font-weight: 400;
       letter-spacing: 1.4px;
 
-      @include respond-to('medium') {
+      @include respond-to('small') {
         font-size: 28px;
       }
 
-      @include respond-to('large') {
-        font-size: 28px;
-      }
-
-      @include respond-to('huge') {
-        font-size: 28px;
-      }
     }
   }
 

@@ -1,24 +1,24 @@
 header {
-  padding: 160px 40px 60px 40px;
+  padding: 120px 30px 40px 30px;
   background: $color-bg;
   position: relative;
   box-sizing: border-box;
 
-  @include respond-to('medium') {
+  @include respond-to('small') {
     min-height: auto;
-    padding: 25px 45px 25px 45px;
+    padding: 105px 45px 25px 45px;
     text-align: center;
   }
 
+  @include respond-to('medium') {
+    padding: 25px 45px 25px 110px;
+  }
+
   @include respond-to('large') {
-    min-height: auto;
     padding: 25px 45px;
-    align-items: center;
   }
 
   @include respond-to('huge') {
-    min-height: auto;
-    padding: 25px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,23 +27,30 @@ header {
   .logo {
     max-width: 115px;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 30px;
+    right: 30px;
+
+    @include respond-to('small') {
+      max-width: 105px;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
     @include respond-to('medium') {
-      max-width: 105px;
-      top: 0;
-      left: 0;
+      top: 10px;
+      left: 60px;
     }
 
     @include respond-to('large') {
       top: 10px;
-      left: 20px;
+      left: 60px;
     }
 
     @include respond-to('huge') {
+      max-width: 115px;
       top: 15px;
-      right: 0;
+      left: 50%;
     }
 
     img {
@@ -62,25 +69,20 @@ header {
 
   .menu {
     li {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
 
-      @include respond-to('medium') {
-        display: inline;
-        margin-right: 40px;
-      }
-
-      @include respond-to('large') {
+      @include respond-to('small') {
         display: inline;
         margin-right: 40px;
       }
 
       @include respond-to('huge') {
        display: inline;
-        margin-right: 40px;
+        margin-right: 25px;
       }
 
       li:last-child {
-        @include respond-to('medium') {
+        @include respond-to('small') {
           margin-right: 0;
         }
       }
@@ -92,9 +94,12 @@ header {
   }
 
   .social {
-    line-height: 30px;
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
+
+    @include respond-to('small') {
+      margin-top: 20px;
+    }
 
     @include respond-to('medium') {
       margin-top: 20px;
@@ -145,7 +150,6 @@ header {
       @include respond-to('huge') {
         margin-right: 40px;
       }
-
     }
 
     .social-link {
@@ -160,17 +164,15 @@ header {
       display: inline-block;
       color: $color-bg;
       margin: 0 auto;
-      margin-top: 60px;
+      margin-top: 30px;
 
-      @include respond-to('medium') {
-        margin-top: 0;
+      @include respond-to('small') {
+        margin-top: 30px;
         line-height: normal;
       }
 
-      @include respond-to('large') {
-      }
-
-      @include respond-to('huge') {
+      @include respond-to('medium') {
+        margin-top: 0;
       }
     }
 
