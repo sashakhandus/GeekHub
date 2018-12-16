@@ -204,16 +204,6 @@
         font-size: 35px;
         font-weight: 200;
       }
-
-      @include respond-to('large') {
-        font-size: 35px;
-        font-weight: 200;
-      }
-
-      @include respond-to('huge') {
-      font-size: 35px;
-        font-weight: 200;
-      }
     }
 
     .control-left {
@@ -221,16 +211,6 @@
       font-size: 40px;
 
       @include respond-to('medium') {
-        font-size: 35px;
-        font-weight: 200;
-      }
-
-      @include respond-to('large') {
-        font-size: 35px;
-        font-weight: 200;
-      }
-
-      @include respond-to('huge') {
         font-size: 35px;
         font-weight: 200;
       }
@@ -255,10 +235,6 @@
       @include respond-to('large') {
         font-size: 45px;
       }
-
-      @include respond-to('huge') {
-        font-size: 45px;
-      }
     }
 
     .consert-month {
@@ -277,10 +253,6 @@
       }
 
       @include respond-to('large') {
-        font-size: 32px;
-      }
-
-      @include respond-to('huge') {
         font-size: 32px;
       }
     }
@@ -327,10 +299,6 @@
       @include respond-to('large') {
         font-size: 32px;
       }
-
-      @include respond-to('huge') {
-        font-size: 32px;
-      }
     }
 
     p {
@@ -348,10 +316,6 @@
       }
 
       @include respond-to('large') {
-        font-size: 22px;
-      }
-
-      @include respond-to('huge') {
         font-size: 22px;
       }
     }
@@ -387,18 +351,6 @@
         @include respond-to('small') {
           font-size: 16px;
         }
-
-        @include respond-to('medium') {
-          font-size: 16px;
-        }
-
-        @include respond-to('large') {
-          font-size: 16px;
-        }
-
-        @include respond-to('huge') {
-          font-size: 16px;
-        }
       }
 
       .songs-item:before {
@@ -410,7 +362,6 @@
         @include respond-to('small') {
           font-size: 16px;
         }
-
       }
     }
   }
@@ -504,7 +455,6 @@
       @include respond-to('small') {
         font-size: 28px;
       }
-
     }
   }
 

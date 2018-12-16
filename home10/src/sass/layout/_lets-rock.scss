@@ -8,7 +8,6 @@
   padding-bottom: 40px;
   position: relative;
 
-
   @include respond-to('medium') {
     padding-top: 75px;
     padding-bottom: 75px;
@@ -42,4 +41,17 @@
     color: $color-primary;
     margin-top: 20px;
   }
+}
+
+.consert-total {
+  margin-top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: $color-bg-secondary;
+}
+
+.consert-drag {
+  width: 80%;
+  height: 5px;
+  background-color: $color-bg;
 }

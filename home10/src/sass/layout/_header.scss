@@ -42,11 +42,6 @@ header {
       left: 60px;
     }
 
-    @include respond-to('large') {
-      top: 10px;
-      left: 60px;
-    }
-
     @include respond-to('huge') {
       max-width: 115px;
       top: 15px;
@@ -101,10 +96,6 @@ header {
       margin-top: 20px;
     }
 
-    @include respond-to('medium') {
-      margin-top: 20px;
-    }
-
     @include respond-to('large') {
       margin-top: 30px;
     }
@@ -119,14 +110,6 @@ header {
       padding: 0;
 
       @include respond-to('medium') {
-        display: inline-block;
-      }
-
-      @include respond-to('large') {
-        display: inline-block;
-      }
-
-      @include respond-to('huge') {
         display: inline-block;
       }
     }

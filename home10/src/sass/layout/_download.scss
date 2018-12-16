@@ -90,13 +90,5 @@
     @include respond-to('medium') {
       margin-left: 5px;
     }
-
-    @include respond-to('large') {
-      margin-left: 5px;
-    }
-
-    @include respond-to('huge') {
-      margin-left: 5px;
-    }
   }
 }

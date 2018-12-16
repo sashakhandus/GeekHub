@@ -156,18 +156,6 @@
       @include respond-to('small') {
         margin-bottom: 30px;
       }
-
-      @include respond-to('medium') {
-        margin-bottom: 30px;
-      }
-
-      @include respond-to('large') {
-        margin-bottom: 30px;
-      }
-
-      @include respond-to('huge') {
-        margin-bottom: 30px;
-      }
     }
 
     .consert-info {
@@ -213,21 +201,6 @@
         margin-top: 5px;
         margin-bottom: 0;
       }
-
-      @include respond-to('medium') {
-        margin-top: 5px;
-        margin-bottom: 0;
-      }
-
-      @include respond-to('large') {
-        margin-top: 5px;
-        margin-bottom: 0;
-      }
-
-      @include respond-to('huge') {
-        margin-top: 5px;
-        margin-bottom: 0;
-      }
     }
 
     .consert-drag {
@@ -250,15 +223,9 @@
 
     @include respond-to('medium') {
       margin: 0 auto;
-      padding: 0;
-    }
-
-    @include respond-to('large') {
-      padding: 0;
     }
 
     @include respond-to('huge') {
-      padding: 0;
       margin: 0;
     }
 
@@ -323,7 +290,6 @@
           height: 60px;
           padding-top: 10px;
         }
-
       }
 
       .btn-videos:hover {
