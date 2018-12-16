@@ -31,7 +31,7 @@ footer {
     @include respond-to('huge') {
       width: 530px;
       margin-top: 100px;
-      margin-bottom: 65px;
+      margin-bottom: 70px;
       padding-bottom: 14px;
     }
   }
@@ -74,7 +74,7 @@ footer {
 
     @include respond-to('medium') {
       height: 1px;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
   }
 
@@ -93,11 +93,6 @@ footer {
         display: inline-block;
         margin-right: 40px;
       }
-
-      @include respond-to('huge') {
-        display: inline-block;
-        margin-right: 45px;
-      }
     }
 
     li a:hover {
@@ -113,7 +108,7 @@ footer {
     margin: 30px 50px 60px;
 
     @include respond-to('medium') {
-      margin-top: 10px;
+      margin-top: 5px;
     }
   }
 }

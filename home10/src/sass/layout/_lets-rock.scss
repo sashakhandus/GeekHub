@@ -19,7 +19,7 @@
   }
 
   @include respond-to('huge') {
-    padding-top: 175px;
+    padding-top: 190px;
     padding-bottom: 175px;
   }
 
@@ -35,11 +35,21 @@
     }
   }
 
+  .text-spechial {
+    @include respond-to('huge') {
+    line-height: 70px;
+  }
+  }
+
   .btn-lets-rock {
     display: inline-block;
     background: $color-bg;
     color: $color-primary;
     margin-top: 20px;
+
+    @include respond-to('huge') {
+      margin-top: 85px;
+    }
   }
 }
 

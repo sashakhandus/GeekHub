@@ -1,14 +1,20 @@
 .download {
 
-  background-image: url("../img/bg-download-min.png");
+ /* background-image: url("../img/bg-download-min.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover;*/
 
   .container {
     margin: 0;
     padding: 60px 30px;
     text-align: center;
+    box-sizing: border-box;
+
+    background-image: url("../img/bg-download-min.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     @include respond-to('medium') {
       max-width: 800px;
@@ -23,8 +29,8 @@
     }
 
     @include respond-to('huge') {
-      max-width: 1200px;
-      padding: 70px 50px 110px;
+      max-width: 1170px;
+      padding: 70px 50px 120px;
     }
   }
 

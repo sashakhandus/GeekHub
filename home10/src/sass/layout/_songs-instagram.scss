@@ -3,6 +3,10 @@
   margin: 0;
   padding: 30px 15px;
 
+  @include respond-to('huge') {
+    padding: 0;
+  }
+
   .container {
 
     @include respond-to('small') {
@@ -19,9 +23,10 @@
     }
 
     @include respond-to('huge') {
+      box-sizing: border-box;
       max-width: 1200px;
       margin: 0 auto;
-      padding-top: 100px;
+      padding: 100px 15px 85px 15px;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -73,6 +78,7 @@
 
           @include respond-to('huge') {
             width: 635px;
+            margin-top: 10px;
           }
         }
       }

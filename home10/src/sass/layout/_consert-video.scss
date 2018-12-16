@@ -3,6 +3,7 @@
   .container {
     padding-right: 15px;
     padding-left: 15px;
+    box-sizing: border-box;
 
     @include respond-to('small') {
       max-width: 600px;
@@ -29,7 +30,7 @@
     @include respond-to('huge') {
       max-width: 1200px;
       padding-top: 90px;
-      padding-bottom: 90px;
+      padding-bottom: 100px;
     }
   }
 
@@ -144,8 +145,8 @@
 
       @include respond-to('huge') {
        display: inline-block;
-        margin-top: 25px;
-        margin-left: 70px;
+        margin-top: 20px;
+        margin-left: 80px;
       }
     }
 
@@ -154,13 +155,17 @@
       margin-bottom: 20px;
 
       @include respond-to('small') {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
       }
     }
 
     .consert-info {
       td {
         vertical-align: top;
+
+        @include respond-to('huge') {
+          padding-bottom: 10px;
+        }
       }
 
       .consert-location {
@@ -186,7 +191,11 @@
       }
 
       @include respond-to('medium') {
-        margin-bottom: 20px;
+          margin-bottom: 20px;
+        }
+
+      @include respond-to('huge') {
+        margin-top: 15px;
       }
     }
 
@@ -198,15 +207,20 @@
       background-color: $color-bg-secondary;
 
       @include respond-to('small') {
-        margin-top: 5px;
+        margin-top: 0;
         margin-bottom: 0;
       }
     }
 
     .consert-drag {
-      width: 30%;
+      width: 20%;
       height: 5px;
       background-color: $color-bg;
+      margin-left: 10px;
+
+      @include respond-to('small') {
+        margin-left: 25px;
+      }
     }
   }
 
@@ -247,7 +261,7 @@
       }
 
       @include respond-to('huge') {
-        top: 70px;
+        top: 65px;
       }
     }
 

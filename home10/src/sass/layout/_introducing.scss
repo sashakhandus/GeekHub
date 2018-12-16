@@ -8,8 +8,12 @@
     padding: 0;
   }
 
+
+
     .container {
       position: relative;
+      box-sizing: border-box;
+
 
       @include respond-to('small') {
         max-width: 600px;
@@ -115,6 +119,10 @@
 
     @include respond-to('medium') {
       padding: 15px 15px;
+    }
+
+    @include respond-to('huge') {
+      padding: 15px 15px 15px 25px;
     }
 
     h3 {

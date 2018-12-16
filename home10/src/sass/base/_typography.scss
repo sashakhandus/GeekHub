@@ -66,8 +66,8 @@
   color: $color-bg;
 
   @include respond-to('small') {
-      font-size: 14px;
-    }
+    font-size: 14px;
+  }
 
   @include respond-to('medium') {
     font-size: 12px;
@@ -92,6 +92,7 @@
 
     @include respond-to('huge') {
       font-size: 116px;
+      letter-spacing: 4px;
     }
 
     .text-spechial {
