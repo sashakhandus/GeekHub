@@ -1,0 +1,16 @@
+.section-title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include respond-to('medium') {
+    margin-bottom: 20px;
+  }
+
+  @include respond-to('large') {
+    margin-bottom: 25px;
+  }
+
+  @include respond-to('huge') {
+    margin-bottom: 40px;
+  }
+}
