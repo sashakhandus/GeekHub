@@ -88,13 +88,14 @@
         counter-reset: item;
         margin: 0;
         padding: 0;
-        margin-top: 60px;
+        margin-top: 10px;
 
         @include respond-to('small') {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
           max-height: 160px;
+          margin-top: 60px;
         }
 
         .songs-item {

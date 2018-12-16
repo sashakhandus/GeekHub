@@ -8,12 +8,9 @@
     padding: 0;
   }
 
-
-
     .container {
       position: relative;
       box-sizing: border-box;
-
 
       @include respond-to('small') {
         max-width: 600px;
