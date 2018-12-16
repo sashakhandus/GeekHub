@@ -11,6 +11,13 @@
     background-position: center;
     background-size: cover;
 
+    @include respond-to('small') {
+      max-width: 600px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 20px 30px 20px;
+    }
+
     @include respond-to('medium') {
       max-width: 800px;
       margin: 0 auto;
@@ -62,7 +69,7 @@
     width: 162px;
     height: 50px;
 
-    @include respond-to('medium') {
+    @include respond-to('small') {
      display: inline-block;
     }
 
@@ -76,7 +83,7 @@
     margin: 0 auto;
     margin-bottom: 10px;
 
-    @include respond-to('medium') {
+    @include respond-to('small') {
       margin-bottom: 0;
     }
   }
@@ -88,7 +95,7 @@
     background-size: cover;
     margin: 0 auto;
 
-    @include respond-to('medium') {
+    @include respond-to('small') {
       margin-left: 5px;
     }
   }
