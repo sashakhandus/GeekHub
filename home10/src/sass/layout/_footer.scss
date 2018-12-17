@@ -65,6 +65,10 @@ footer {
     }
   }
 
+  input[type="text"]:focus {
+    outline: none;
+  }
+
   .line {
     display: block;
     width: 100%;
