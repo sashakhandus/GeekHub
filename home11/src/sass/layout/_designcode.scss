@@ -1,0 +1,124 @@
+.design-code {
+  color: #ffffff;
+
+  .design {
+    background: url("../img/bg-design-copy.png");
+    background-position: center;
+    background-size: cover;
+
+    .wrapper {
+      margin: 0 auto;
+      text-align: center;
+
+      @include respond-to('small') {
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      @include respond-to('medium') {
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      @include respond-to('large') {
+        padding-right: 55px;
+        text-align: left;
+      }
+
+      @include respond-to('huge') {
+        padding-right: 75px;
+        text-align: left;
+      }
+
+    }
+  }
+
+  .code {
+    background: url("../img/bg-code.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .wrapper {
+      margin: 0 auto;
+      text-align: center;
+
+      @include respond-to('small') {
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      @include respond-to('medium') {
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      @include respond-to('large') {
+        padding-left: 55px;
+        text-align: left;
+      }
+
+      @include respond-to('huge') {
+        padding-left: 75px;
+        text-align: left;
+      }
+    }
+  }
+
+  .wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 310px;
+
+
+    @include respond-to('small') {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      max-width: 540px;
+    }
+
+    @include respond-to('medium') {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      max-width: 700px;
+    }
+
+    @include respond-to('large') {
+      padding-top: 130px;
+      padding-bottom: 130px;
+      max-width: 460px;
+    }
+
+    @include respond-to('huge') {
+      padding-top: 140px;
+      padding-bottom: 140px;
+      max-width: 570px;
+    }
+  }
+
+  .section-title {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .special-title {
+    font-weight: 300;
+  }
+
+  .section-parag {
+    color: #ffffff;
+    margin-bottom: 35px;
+    line-height: 1.75;
+
+
+    @include respond-to('small') {
+      line-height: 1.5;
+    }
+  }
+
+}
+
+
+
+
+

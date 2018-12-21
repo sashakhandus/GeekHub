@@ -1,0 +1,158 @@
+.what-do {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #ffffff;
+  text-align: center;
+
+  @include respond-to('medium') {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include respond-to('huge') {
+    padding-top: 100px;
+    padding-bottom: 105px;
+  }
+
+  .section-title {
+    display: inline-block;
+    margin-bottom: 50px;
+
+    @include respond-to('small') {
+      margin-bottom: 50px;
+    }
+
+    @include respond-to('medium') {
+      margin-bottom: 60px;
+    }
+
+    @include respond-to('large') {
+      margin-bottom: 90px;
+    }
+
+    @include respond-to('huge') {
+      margin-bottom: 100px;
+    }
+  }
+
+  .what-do-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    @include respond-to('small') {
+      text-align: left;
+    }
+
+    @include respond-to('medium') {
+      padding: 0;
+    }
+
+    @include respond-to('huge') {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .what-do-item {
+    flex-basis: 520px;
+    margin-bottom: 50px;
+
+    @include respond-to('small') {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      box-sizing: border-box;
+      flex-basis: 520px;
+      margin-bottom: 50px;
+    }
+
+    @include respond-to('medium') {
+      flex-basis: 680px;
+    }
+
+    @include respond-to('large') {
+      flex-basis: 900px;
+      flex-shrink: 1;
+      margin-bottom: 70px;
+    }
+
+    @include respond-to('huge') {
+      flex-basis: 550px;
+    }
+
+    img {
+      margin-bottom: 20px;
+
+      @include respond-to('small') {
+        margin-bottom: 0;
+      }
+
+      @include respond-to('large') {
+        width: 100%;
+      }
+
+      @include respond-to('huge') {
+        width: auto;
+      }
+    }
+
+    .what-do-item-info {
+
+      @include respond-to('small') {
+        flex-basis: 500px;
+        flex-shrink: 1;
+      }
+
+      @include respond-to('large') {
+        flex-basis: 700px;
+      }
+
+      @include respond-to('huge') {
+        flex-basis: 400px;
+        flex-shrink: 1;
+      }
+    }
+
+    .section-title {
+      margin-bottom: 50px;
+
+      @include respond-to('medium') {
+        margin-bottom: 80px;
+      }
+
+      @include respond-to('huge') {
+        margin-bottom: 100px;
+      }
+    }
+
+    .what-do-item-title {
+      color: #000000;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .what-do-item-parag {
+      color: #949494;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
