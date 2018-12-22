@@ -29,7 +29,7 @@
 
     .section-title {
       width: 90%;
-      color: #ffffff;
+      color: $color-secondary;
       font-size: 40px;
       margin: 0 auto;
       margin-bottom: 25px;
@@ -41,7 +41,7 @@
     }
 
     .section-parag {
-      color: #949494;
+      color: $color-parag;
       width: 90%;
       max-width: 700px;
       margin: 0 auto;
@@ -49,15 +49,6 @@
       @include respond-to('small') {
         width: auto;
         margin: auto;
-      }
-
-      @include respond-to('medium') {
-      }
-
-      @include respond-to('large') {
-      }
-
-      @include respond-to('huge') {
       }
     }
 
@@ -71,15 +62,6 @@
       @include respond-to('small') {
         width: auto;
         margin-top: 124px;
-      }
-
-      @include respond-to('medium') {
-      }
-
-      @include respond-to('large') {
-      }
-
-      @include respond-to('huge') {
       }
 
       .about-us-item {
@@ -112,7 +94,7 @@
       }
 
       figcaption {
-        color: #ffffff;
+        color: $color-secondary;
         font-family: Roboto, sans-serif;
         font-size: 24px;
         font-weight: 700;
@@ -122,28 +104,15 @@
 
     .btn-class {
       margin-top: 50px;
-      color: #ffffff;
+      color: $color-secondary;
 
       @include respond-to('small') {
         margin-top: 100px;
       }
-
-      @include respond-to('medium') {
-      }
-
-      @include respond-to('large') {
-      }
-
-      @include respond-to('huge') {
-      }
     }
 
     .btn-class:hover {
-      color: #ffffff;
+      color: $color-secondary;
     }
   }
-
-
-
-
 }

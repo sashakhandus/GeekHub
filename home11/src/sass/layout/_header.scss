@@ -60,7 +60,7 @@
 
   .menu-link {
     padding: 10px 18px;
-    color: #000000;
+    color: $color-primary;
     font-family: "Proxima Nova", sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -105,10 +105,6 @@
       margin-top: 210px;
     }
 
-    @include respond-to('huge') {
-      margin-top: 210px;
-    }
-
     .section-parag {
       margin-top: 10px;
     }
@@ -116,15 +112,14 @@
     .header-btn, .header-btn:visited, .header-btn:active {
       margin-top: 60px;
       margin-bottom: 30px;
-      color: #ffffff;
+      color: $color-secondary;
     }
 
     .header-btn:hover {
-      color: #ffffff;
+      color: $color-secondary;
     }
 
     .scroll-btn {
-      //margin-top: 100px;
       display: inline-block;
       width: 25px;
       height: 43px;

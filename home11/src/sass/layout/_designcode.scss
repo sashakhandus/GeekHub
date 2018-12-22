@@ -1,5 +1,5 @@
 .design-code {
-  color: #ffffff;
+  color: $color-secondary;
 
   .design {
     background: url("../img/bg-design-copy.png");
@@ -17,17 +17,14 @@
 
       @include respond-to('medium') {
         margin: 0 auto;
-        text-align: left;
       }
 
       @include respond-to('large') {
         padding-right: 55px;
-        text-align: left;
       }
 
       @include respond-to('huge') {
         padding-right: 75px;
-        text-align: left;
       }
     }
   }
@@ -44,22 +41,18 @@
 
       @include respond-to('small') {
         margin: 0 auto;
-        text-align: left;
       }
 
       @include respond-to('medium') {
         margin: 0 auto;
-        text-align: left;
       }
 
       @include respond-to('large') {
         padding-left: 55px;
-        text-align: left;
       }
 
       @include respond-to('huge') {
         padding-left: 75px;
-        text-align: left;
       }
     }
   }
@@ -96,7 +89,7 @@
   }
 
   .section-title {
-    color: #ffffff;
+    color: $color-secondary;
     margin-bottom: 10px;
   }
 
@@ -105,10 +98,9 @@
   }
 
   .section-parag {
-    color: #ffffff;
+    color: $color-secondary;
     margin-bottom: 35px;
     line-height: 1.75;
-
 
     @include respond-to('small') {
       line-height: 1.5;

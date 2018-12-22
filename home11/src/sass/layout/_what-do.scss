@@ -1,7 +1,7 @@
 .what-do {
   padding-top: 50px;
   padding-bottom: 50px;
-  color: #ffffff;
+  color: $color-secondary;
   text-align: center;
 
   @include respond-to('medium') {
@@ -17,10 +17,6 @@
   .section-title {
     display: inline-block;
     margin-bottom: 50px;
-
-    @include respond-to('small') {
-      margin-bottom: 50px;
-    }
 
     @include respond-to('medium') {
       margin-bottom: 60px;
@@ -128,14 +124,14 @@
     }
 
     .what-do-item-title {
-      color: #000000;
+      color: $color-primary;
       font-family: "Proxima Nova", sans-serif;
       font-size: 30px;
       font-weight: 700;
     }
 
     .what-do-item-parag {
-      color: #949494;
+      color: $color-parag;
       font-family: "Proxima Nova", sans-serif;
       font-size: 18px;
       font-weight: 300;

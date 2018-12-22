@@ -1,12 +1,12 @@
 .btn-class {
-  color: #ffffff;
+  color: $color-secondary;
   font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
 .section-title {
-  color: #000000;
+  color: $color-primary;
   font-family: "Proxima Nova", sans-serif;
   font-size: 38px;
   font-weight: 700;
@@ -18,14 +18,14 @@
 }
 
 .section-parag {
-  color: #000000;
+  color: $color-primary;
   font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
   font-weight: 300;
   margin: 0;
 
   @include respond-to('small') {
-    color: #949494;
+    color: $color-parag;
     font-size: 18px;
   }
 
