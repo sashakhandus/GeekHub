@@ -1,5 +1,20 @@
-.slider {
-  position: relative;
+//.slider {
+  /*display: none;
+
+  @include respond-to('small') {
+  }
+
+  @include respond-to('medium') {
+  }
+
+  @include respond-to('large') {
+    display: block;
+    position: relative;
+  }
+
+  @include respond-to('huge') {
+  }
+
 
   .slider-list {
     list-style: none;
@@ -45,21 +60,21 @@
   }
 
   .item1 {
-    background: url("../img/portfolio_img3.png");
+    background: url("../img/portfolio_img3-min.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .item2 {
-    background: url("../img/portfolio_img1.png");
+    background: url("../img/portfolio_img1-min.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .item3 {
-    background: url("../img/portfolio_img2.png");
+    background: url("../img/portfolio_img2-min.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -90,6 +105,90 @@
     right: 0;
     padding-left: 15px;
   }
+}*/
 
 
+.sliderjs {
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+
+  .slide-left, .slide-right {
+    display: none;
+
+    @include respond-to('large') {
+      display: inline-block;
+    }
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    padding: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .prev, .next {
+    width: 58px;
+    height: 58px;
+    color: #030303;
+    background: #ffffff;
+    font-size: 34px;
+    font-weight: 200;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    padding-top: 5px;
+    text-align: center;
+    transition: 0.6s ease;
+
+    .fas {
+      margin: 0 auto;
+    }
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev {
+    left: 15px;
+  }
+
+  .prev:hover, .next:hover {
+    opacity: 0.7;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+  }
+  @keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

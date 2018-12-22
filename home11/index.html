@@ -83,7 +83,7 @@
             <ul class="what-do-list">
                 <li class="what-do-item">
                     <picture>
-                        <img class="what-do-item-img" src="assets/img/img_design.png">
+                        <img class="what-do-item-img" src="assets/img/img_design.png" alt="Web design">
                     </picture>
                     <div class="what-do-item-info">
                         <h3 class="what-do-item-title">Web design</h3>
@@ -93,7 +93,7 @@
                 </li>
                 <li class="what-do-item">
                     <picture>
-                        <img class="what-do-item-img" src="assets/img/img_web-applications.png">
+                        <img class="what-do-item-img" src="assets/img/img_web-applications.png" alt="Web applications">
                     </picture>
                     <div class="what-do-item-info">
                         <h3 class="what-do-item-title">Web applications</h3>
@@ -103,7 +103,7 @@
                 </li>
                 <li class="what-do-item">
                     <picture>
-                        <img class="what-do-item-img" src="assets/img/img_paiting.png">
+                        <img class="what-do-item-img" src="assets/img/img_paiting.png" alt="Digital paiting">
                     </picture>
                     <div class="what-do-item-info">
                         <h3 class="what-do-item-title">Digital paiting</h3>
@@ -113,7 +113,7 @@
                 </li>
                 <li class="what-do-item">
                     <picture>
-                        <img class="what-do-item-img" src="assets/img/img-desktop.png">
+                        <img class="what-do-item-img" src="assets/img/img-desktop.png" alt="Desktop Applications">
                     </picture>
                     <div class="what-do-item-info">
                         <h3 class="what-do-item-title">Desktop Applications</h3>
@@ -127,36 +127,46 @@
     </div>
 </section>
 
-<section class="slider">
-    <ul class="slider-list row">
-        <li class="slider-item col-12 col-lg-4 item1">
-            <div class="slider-info">
-                <h2 class="section-title">Neptune template</h2>
-                <p class="section-parag">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                    Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
-                <a class="best-btn btn-class">Ask for price</a>
-            </div>
-        </li>
-        <li class="slider-item col-12 col-lg-4 item2">
-            <div class="slider-info special-info">
-                <h2 class="section-title">Neptune template</h2>
-                <p class="section-parag">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                    Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
-                <a class="best-btn btn-class">Ask for price</a>
-            </div>
-        </li>
-        <li class="slider-item col-12 col-lg-4 item3">
-            <div class="slider-info">
-                <h2 class="section-title">Neptune template</h2>
-                <p class="section-parag">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                    Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
-                <a class="best-btn btn-class">Ask for price</a>
-            </div>
-        </li>
-    </ul>
-    <a class="slider-arrow arrow-left"><i class="fas fa-angle-left arrow"></i></a>
-    <a class="slider-arrow arrow-right"><i class="fas fa-angle-right arrow"></i></a>
+<section class="sliderjs row">
+    <div class="slideshow-container slide-left col-lg-4">
+    <div class="slide1">
+        <img src="assets/img/portfolio_img1.png">
+    </div>
+    <div class="slide1">
+        <img src="assets/img/portfolio_img2.png">
+    </div>
+    <div class="slide1">
+        <img src="assets/img/portfolio_img3.png">
+    </div>
+</div>
+    <div class="slideshow-container slide-center col-lg-4">
+        <div class="slide2">
+            <img src="assets/img/portfolio_img2.png">
+        </div>
+        <div class="slide2">
+            <img src="assets/img/portfolio_img3.png">
+        </div>
+        <div class="slide2">
+            <img src="assets/img/portfolio_img1.png">
+        </div>
+    </div>
+    <div class="slideshow-container slide-right col-lg-4">
+        <div class="slide3">
+            <img src="assets/img/portfolio_img3.png">
+        </div>
+        <div class="slide3">
+            <img src="assets/img/portfolio_img1.png">
+        </div>
+        <div class="slide3">
+            <img src="assets/img/portfolio_img2.png">
+        </div>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left arrow"></i></a>
+    <a class="next" onclick="plusSlides(-1)"><i class="fas fa-angle-right arrow"></i></a>
 </section>
+
 
 <section class="about-us">
     <div class="container">
@@ -206,6 +216,59 @@
 
 <script src="assets/js/libs.js"></script>
 <script src="assets/js/main.js"></script>
+
+
+<!--<script>
+  $('#recipeCarousel').carousel({
+    interval: 10000
+  })
+
+  $('.carousel .carousel-item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    if (next.next().length>0) {
+      next.next().children(':first-child').clone().appendTo($(this));
+    }
+    else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+    }
+  });
+</script>-->
+
+
+<!--<script>
+  $('#carouselExample').on('slide.bs.carousel', function (e) {
+
+    /*
+
+    CC 2.0 License Iatek LLC 2018
+    Attribution required
+
+    */
+
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $('.carousel-item').length;
+
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i=0; i<it; i++) {
+        // append slides to end
+        if (e.direction=="left") {
+          $('.carousel-item').eq(i).appendTo('.carousel-inner');
+        }
+        else {
+          $('.carousel-item').eq(0).appendTo('.carousel-inner');
+        }
+      }
+    }
+  });
+</script>-->
 
 
 </body>
