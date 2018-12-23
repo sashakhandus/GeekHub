@@ -44,6 +44,13 @@
       padding: 0;
     }
 
+    @include respond-to('large') {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
     @include respond-to('huge') {
       display: flex;
       justify-content: space-between;
@@ -70,13 +77,14 @@
     }
 
     @include respond-to('large') {
-      flex-basis: 900px;
+      flex-basis: 450px;
       flex-shrink: 1;
-      margin-bottom: 70px;
+      margin-bottom: 50px;
     }
 
     @include respond-to('huge') {
       flex-basis: 550px;
+      margin-bottom: 70px;
     }
 
     img {
@@ -87,7 +95,7 @@
       }
 
       @include respond-to('large') {
-        width: 100%;
+        width: 80%;
       }
 
       @include respond-to('huge') {
@@ -98,12 +106,17 @@
     .what-do-item-info {
 
       @include respond-to('small') {
-        flex-basis: 500px;
+        flex-basis: 360px;
+        flex-shrink: 1;
+      }
+
+      @include respond-to('medium') {
+        flex-basis: 520px;
         flex-shrink: 1;
       }
 
       @include respond-to('large') {
-        flex-basis: 700px;
+        flex-basis: 350px;
       }
 
       @include respond-to('huge') {

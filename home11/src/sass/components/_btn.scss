@@ -1,13 +1,19 @@
 
 .btn-class, .btn-class:visited, .btn-class:active {
   display: inline-block;
-  padding: 18px 53px;
+  padding: 14px 40px;
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 40px;
   background: url("../img/bg-btn.png");
   background-position: center;
   background-size: cover;
   cursor: pointer;
+
+  @include respond-to('medium') {
+    padding: 18px 53px;
+    line-height: 1;
+    border-radius: 50px;
+  }
 }
 
 .btn-class:hover {
