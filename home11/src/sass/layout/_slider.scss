@@ -43,51 +43,55 @@
       position: absolute;
       top: 0;
       left: 0;
-    }
 
-    .slider-info {
-      display: inline-block;
-      width: 100%;
-      height: auto;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      padding-right: 40px;
-      padding-left: 40px;
-
-      .section-title {
-        display: inline-block;
-        color: $color-secondary;
-        font-size: 20px;
-        margin-bottom: 14px;
-
-        @include respond-to('small') {
-          font-size: 30px;
-          margin-bottom: 12px;
-        }
-
-        @include respond-to('medium') {
-          display: block;
-          color: $color-secondary;
-          font-size: 30px;
-          margin-bottom: 12px;
-        }
-
-        @include respond-to('large') {
-          display: block;
-          color: $color-secondary;
-          font-size: 30px;
-          margin-bottom: 12px;
-        }
-
-        @include respond-to('huge') {
-          display: inline-block;
-          color: $color-secondary;
-          font-size: 30px;
-          margin-bottom: 12px;
-        }
+      @include respond-to('large') {
+        display: none;
       }
 
+
+      .slider-info {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding-right: 40px;
+        padding-left: 40px;
+
+        .section-title {
+          display: inline-block;
+          color: $color-secondary;
+          font-size: 20px;
+          margin-bottom: 14px;
+
+          @include respond-to('small') {
+            font-size: 30px;
+            margin-bottom: 12px;
+          }
+
+          @include respond-to('medium') {
+            display: block;
+            color: $color-secondary;
+            font-size: 30px;
+            margin-bottom: 12px;
+          }
+
+          @include respond-to('large') {
+            display: block;
+            color: $color-secondary;
+            font-size: 30px;
+            margin-bottom: 12px;
+          }
+
+          @include respond-to('huge') {
+            display: inline-block;
+            color: $color-secondary;
+            font-size: 30px;
+            margin-bottom: 12px;
+          }
+        }
+    }
       .section-parag {
         display: inline-block;
         color: $color-secondary;
@@ -133,6 +137,10 @@
         margin: 0;
       }
     }
+  }
+
+  .slideshow-container:hover .slider-info-bg{
+    display: inline-block;
   }
 
   .prev, .next {

@@ -101,7 +101,6 @@
     color: $color-secondary;
     margin-bottom: 35px;
     line-height: 1.75;
-    //text-align: left;
 
     @include respond-to('small') {
       line-height: 1.5;
