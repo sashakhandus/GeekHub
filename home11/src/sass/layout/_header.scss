@@ -102,7 +102,7 @@
     }
 
     @include respond-to('large') {
-      margin-top: 210px;
+      margin-top: 190px;
     }
 
     .section-parag {
@@ -110,7 +110,7 @@
     }
 
     .header-btn, .header-btn:visited, .header-btn:active {
-      margin-top: 60px;
+      margin-top: 50px;
       margin-bottom: 30px;
       color: $color-secondary;
     }

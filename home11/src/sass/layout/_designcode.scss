@@ -20,6 +20,8 @@
       }
 
       @include respond-to('large') {
+        margin-right: 0;
+        margin-left: auto;
         padding-right: 55px;
       }
 
@@ -41,13 +43,12 @@
 
       @include respond-to('small') {
         margin: 0 auto;
-      }
-
-      @include respond-to('medium') {
-        margin: 0 auto;
+        text-align: left;
       }
 
       @include respond-to('large') {
+        margin-left: 0;
+        margin-right: auto;
         padding-left: 55px;
       }
 
@@ -61,7 +62,6 @@
     padding-top: 70px;
     padding-bottom: 70px;
     max-width: 310px;
-
 
     @include respond-to('small') {
       padding-top: 100px;
@@ -84,7 +84,7 @@
     @include respond-to('huge') {
       padding-top: 140px;
       padding-bottom: 140px;
-      max-width: 570px;
+      max-width: 580px;
     }
   }
 
@@ -101,9 +101,13 @@
     color: $color-secondary;
     margin-bottom: 35px;
     line-height: 1.75;
+    //text-align: left;
 
     @include respond-to('small') {
       line-height: 1.5;
+    }
+
+    @include respond-to('large') {
     }
   }
 
