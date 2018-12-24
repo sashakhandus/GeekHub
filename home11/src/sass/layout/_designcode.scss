@@ -105,9 +105,6 @@
     @include respond-to('small') {
       line-height: 1.5;
     }
-
-    @include respond-to('large') {
-    }
   }
 
 }
