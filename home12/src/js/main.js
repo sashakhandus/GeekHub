@@ -46,13 +46,16 @@ function pow() {
   let num2 = document.querySelector('#num2').value;
   num2 = parseInt(num2);
 
+  var result;
+
   if (num2 === 0) {
-    let result = 1;
+    result = 1;
   } else if (num2 === 1) {
-    let result = num1;
+    result = num1;
   } else if (num2 > 1 ){
+    result = num1;
     for (i = 2; i <= num2; i++) {
-      let result = result * num1;
+      result = result * num1;
     }
   }
 
