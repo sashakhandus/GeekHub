@@ -18,10 +18,10 @@ function reset() {
 
 function sum() {
  let num1 = document.querySelector('#num1').value;
-  num1 = parseInt(num1);
+  num1 = parseFloat(num1);
 
   let num2 = document.querySelector('#num2').value;
-  num2 = parseInt(num2);
+  num2 = parseFloat(num2);
 
   let result = num1 + num2;
   res.innerHTML = `Result: ${result}`;
@@ -29,10 +29,10 @@ function sum() {
 
 function sub() {
   let num1 = document.querySelector('#num1').value;
-  num1 = parseInt(num1);
+  num1 = parseFloat(num1);
 
   let num2 = document.querySelector('#num2').value;
-  num2 = parseInt(num2);
+  num2 = parseFloat(num2);
 
   let result = num1 - num2;
   res.innerHTML = `Result: ${result}`;
@@ -41,10 +41,10 @@ function sub() {
 
 function pow() {
   let num1 = document.querySelector('#num1').value;
-  num1 = parseInt(num1);
+  num1 = parseFloat(num1);
 
   let num2 = document.querySelector('#num2').value;
-  num2 = parseInt(num2);
+  num2 = parseFloat(num2);
 
   var result;
 
@@ -54,7 +54,7 @@ function pow() {
     result = num1;
   } else if (num2 > 1 ){
     result = num1;
-    for (i = 2; i <= num2; i++) {
+    for (let i = 2; i <= num2; i++) {
       result = result * num1;
     }
   }
@@ -64,7 +64,7 @@ function pow() {
 
 function sin() {
   let num1 = document.querySelector('#num1').value;
-  num1 = parseInt(num1);
+  num1 = parseFloat(num1);
   console.log(num1);
 
   let result = Math.sin(num1 * Math.PI / 180);
@@ -74,7 +74,7 @@ function sin() {
 
 function cos() {
   let num1 = document.querySelector('#num1').value;
-  num1 = parseInt(num1);
+  num1 = parseFloat(num1);
   console.log(num1);
 
   let result = Math.cos(num1 * Math.PI / 180);
@@ -83,7 +83,7 @@ function cos() {
 
 function sqrt() {
   let num1 = document.querySelector('#num1').value;
-  num1 = parseInt(num1);
+  num1 = parseFloat(num1);
 
   let result = Math.sqrt(num1);
   res.innerHTML = `Result: ${result}`;
@@ -98,7 +98,7 @@ function factorial(num) {
 
 function getFactorial() {
   let num1 = document.querySelector('#num1').value;
-  num1 = parseInt(num1);
+  num1 = parseFloat(num1);
   console.log(num1);
 
   let result = factorial(num1);
