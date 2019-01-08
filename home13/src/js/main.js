@@ -32,14 +32,29 @@ $(document).ready(function(){
   })
 
   $('.task-list').on('click', '.input-edit', function() {
+    let oldValue = $(this).parent().find('.item-task').val()
     let inputTaskEdit = $(this).parent().find('.item-task')
     inputTaskEdit.addClass('editItem')
     let editValue = inputTaskEdit.val()
     let taskItemNew = $(`<input type="text" class="item-task" value=${editValue}>
     <input type="button" class="input-save" value="save">
     <input type="button" class="input-cancel" value="cancel">`)
-
     $(this).parent().empty().append(taskItemNew)
-
   })
+
+  $('.task-list').on('click', '.input-save', function() {
+    let inputVal = $(this).parent().find('.item-task').val()
+    let taskItem = $(`<li><input type="text" class="item-task" value=${inputVal}>
+    <input type="button" class="input-delete" value="delete">
+    <input type="button" class="input-edit" value="edit"></li>`)
+    $(this).parent().empty().append(taskItem)
+  })
+
+  $('.task-list').on('click', '.input-cancel', function() {
+    let taskItem = $(`<li><input type="text" class="item-task" value=${oldVal}>
+    <input type="button" class="input-delete" value="delete">
+    <input type="button" class="input-edit" value="edit"></li>`)
+    $(this).parent().empty().append(taskItem)
+  })
+
 })
