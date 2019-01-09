@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  localStorage.clear()
+  //localStorage.clear()
 
   let oldValue;
   let idLocalStorage;
@@ -16,24 +16,51 @@ $(document).ready(function(){
     $('.task-list').append(taskItem)
   }
 
+  function sortKeyLocalStorage(removeKey) {
+    console.log(removeKey)
+    let len = localStorage.length
+    for(let i = 0; i <= len; i++) {
+      if (i => removeKey) {
+        let key = localStorage.key(i)
+        let value = localStorage[key]
+        localStorage.setItem(i , value)
+      }
+    }
+    localStorage.removeItem(len)
+  }
+
   function addLocalStorage(inputVal) {
     idLocalStorage ? idLocalStorage = localStorage.length : idLocalStorage = 0
-    console.log(idLocalStorage)
+   // console.log(idLocalStorage)
     localStorage.setItem(idLocalStorage, inputVal)
     idLocalStorage ++
   }
 
   function removeLocalStorage(inputVal) {
-    console.log(inputVal)
-    for(let i = 0, len = localStorage.length; i<len; i++) {
+    let removeKey
+    for(let i = 0, len = localStorage.length; i < len; i++) {
       let key = localStorage.key(i)
       let value = localStorage[key]
       if(value === inputVal){
-        console.log(key + " => " + value)
         localStorage.removeItem(key)
+        removeKey = key
       }
     }
+    sortKeyLocalStorage(removeKey)
    }
+
+   function showLocalStorage() {
+     let len = localStorage.length
+     if (len > 0) {
+       for (let i = 0; i < len; i++) {
+         let key = localStorage.key(i)
+         let value = localStorage[key]
+         addTaskItem(value)
+       }
+     }
+   }
+
+  showLocalStorage()
 
   $('.form').on('click', '.add-task', function() {
       let inputTask = $('<input type="text" class="input-task" placeholder="Enter your task">')
