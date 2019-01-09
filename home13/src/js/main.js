@@ -17,14 +17,14 @@ $(document).ready(function(){
   }
 
   function sortKeyLocalStorage(removeKey) {
+    console.log(localStorage.length)
     console.log(removeKey)
     let len = localStorage.length
-    for(let i = 0; i <= len; i++) {
-      if (i => removeKey) {
+    for(let i = removeKey; i < len; i++) {
         let key = localStorage.key(i)
-        let value = localStorage[key]
+        let value = localStorage[i]
+        console.log(value)
         localStorage.setItem(i , value)
-      }
     }
     localStorage.removeItem(len)
   }
