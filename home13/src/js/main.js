@@ -16,24 +16,11 @@ $(document).ready(function(){
     $('.task-list').append(taskItem)
   }
 
-  function sortKeyLocalStorage(removeKey) {
-    console.log(localStorage.length)
-    console.log(removeKey)
-    let len = localStorage.length
-    for(let i = removeKey; i < len; i++) {
-        let key = localStorage.key(i)
-        let value = localStorage[i]
-        console.log(value)
-        localStorage.setItem(i , value)
-    }
-    localStorage.removeItem(len)
-  }
-
   function addLocalStorage(inputVal) {
-    idLocalStorage ? idLocalStorage = localStorage.length : idLocalStorage = 0
-   // console.log(idLocalStorage)
+    let len = localStorage.length
+    let key = localStorage.key(len - 1)
+    len > 0 ? idLocalStorage = +key + 1 : idLocalStorage = 0
     localStorage.setItem(idLocalStorage, inputVal)
-    idLocalStorage ++
   }
 
   function removeLocalStorage(inputVal) {
@@ -46,7 +33,6 @@ $(document).ready(function(){
         removeKey = key
       }
     }
-    sortKeyLocalStorage(removeKey)
    }
 
    function showLocalStorage() {
@@ -80,7 +66,7 @@ $(document).ready(function(){
   })
 
   $('.task-list').on('click', '.input-delete', function() {
-   $(this).parent().slideUp(2000)
+   $(this).parent().slideUp(1000)
     let inputVal = $(this).parent().find('.item-task').val()
     removeLocalStorage(inputVal)
   })
