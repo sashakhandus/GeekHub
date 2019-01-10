@@ -1,7 +1,5 @@
 $(document).ready(function(){
-
-  //localStorage.clear()
-
+  
   let oldValue;
   let idLocalStorage;
 
