@@ -23,7 +23,10 @@ return [
             'url' => '#',
         ],
     ],
-    'siteLogo' => 'assets/img/Logo.png',
+    'siteLogo' => [
+        'alt' => 'logo',
+        'src' => 'assets/img/Logo.png',
+        ],
     'sectionTitle' => [
         'headerTitle' => 'Lorem ipsum dolor sit amet',
         'designcodeTitle' => [
@@ -106,6 +109,52 @@ return [
             'title' => 'Watch more',
             'url' => '#',
             ],
+    ],
+    'sliderContent' => [
+        '1' => [
+            [
+                'src' => 'assets/img/portfolio_img1.png',
+                'alt' => 'img 1',
+            ],
+            [
+                'src' => 'assets/img/portfolio_img2.png',
+                'alt' => 'img 2',
+            ],
+            [
+                'src' => 'assets/img/portfolio_img3.png',
+                'alt' => 'img 3',
+            ],
+        ],
+        '2' => [
+            [
+                'src' => 'assets/img/portfolio_img2.png',
+                'alt' => 'img 2',
+            ],
+            [
+                'src' => 'assets/img/portfolio_img3.png',
+                'alt' => 'img 3',
+            ],
+            [
+                'src' => 'assets/img/portfolio_img1.png',
+                'alt' => 'img 1',
+            ],
+        ],
+        '3' => [
+            [
+                'src' => 'assets/img/portfolio_img3.png',
+                'alt' => 'img 3',
+            ],
+            [
+                'src' => 'assets/img/portfolio_img1.png',
+                'alt' => 'img 1',
+            ],
+            [
+                'src' => 'assets/img/portfolio_img2.png',
+                'alt' => 'img 2',
+            ],
+        ],
+
+
     ],
 ]
 ?>

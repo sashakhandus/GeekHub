@@ -28,7 +28,7 @@ $data = require('data.php');
             <a class="navbar-brand logo" href="/" >
                 <?php
                 $siteLogo = $data['siteLogo'];
-                print '<img src='.$siteLogo.' alt="logo">'
+                print '<img src='.$data['siteLogo']['src'].' alt='.$data['siteLogo']['alt'].'>'
                 ?>
             </a>
             <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +38,7 @@ $data = require('data.php');
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <?php
-                    $mainMenu = $data['mainMenu'];
-                    foreach($mainMenu as $itemMenu) {
+                    foreach($data['mainMenu'] as $itemMenu) {
                         print '<li class="nav-item menu-item"><a class="menu-link" href='.$itemMenu["url"].'>'.$itemMenu["title"].'</a>
                     </li>';
                     }
@@ -49,22 +48,14 @@ $data = require('data.php');
         </nav>
         <div class="header-info">
             <h1 class="section-title">
-                <?php $sectionTitle = $data['sectionTitle'];
-                      $headerTitle = $sectionTitle['headerTitle'];
-                      print $headerTitle;
-                ?>
+                <?php print $data['sectionTitle']['headerTitle']; ?>
             </h1>
             <p class="section-parag">
-                <?php $sectionParag = $data['sectionParag'];
-                $headerParag = $sectionParag['headerParag'];
-                print $headerParag;
-                ?>
+                <?php print $data['sectionParag']['headerParag']; ?>
             </p>
             <div>
                 <?php
-                $buttons = $data['buttons'];
-                $buttonAsk = $buttons['ask'];
-                print '<a class="header-btn btn-class" href='.$buttonAsk['url'].'>'.$buttonAsk['title'].'</a>';
+                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
             <div>
@@ -79,42 +70,31 @@ $data = require('data.php');
         <div class="col-12 col-lg-6 design">
             <div class="wrapper">
                 <h2 class="section-title"><span class="special-title">
-                        <?php $designcodeTitle = $sectionTitle['designcodeTitle'];
-                              $bestTitle = $designcodeTitle['best'];
-                              print $bestTitle;
-                        ?>
+                        <?php print $data['sectionTitle']['designcodeTitle']['best']; ?>
                     </span>
-                    <?php $designTitle = $designcodeTitle['design'];
-                          print $designTitle;
-                    ?>
+                    <?php print $data['sectionTitle']['designcodeTitle']['design']; ?>
                     </h2>
                 <p class="section-parag">
-                    <?php $designcodeParag = $sectionParag['designcodeParag'];
-                          $designParag = $designcodeParag['design'];
-                    print $designParag;
-                    ?>
+                    <?php print $data['sectionParag']['designcodeParag']['design']; ?>
                 </p>
                 <?php
-                print '<a class="header-btn btn-class" href='.$buttonAsk['url'].'>'.$buttonAsk['title'].'</a>';
+                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
         </div>
         <div class="col-12 col-lg-6 code">
             <div class="wrapper mr-auto">
                 <h2 class="section-title"><span class="special-title">
-                        <?php print $bestTitle; ?>
+                        <?php print $data['sectionTitle']['designcodeTitle']['best']; ?>
                     </span>
-                        <?php $codeTitle = $designcodeTitle['code'];
-                        print $codeTitle;
+                        <?php print $data['sectionParag']['designcodeParag']['code'];
                         ?>
                     </h2>
                 <p class="section-parag">
-                    <?php $codeParag = $designcodeParag['code'];
-                    print $codeParag;
-                    ?>
+                    <?php print $data['sectionParag']['designcodeParag']['design']; ?>
                 </p>
                 <?php
-                print '<a class="header-btn btn-class" href='.$buttonAsk['url'].'>'.$buttonAsk['title'].'</a>';
+                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
         </div>
@@ -124,15 +104,12 @@ $data = require('data.php');
 <section class="what-do">
     <div class="container">
         <h2 class="section-title what-do-title">
-            <?php $whatdoTitle = $sectionTitle['whatdoTitle'];
-                  print $whatdoTitle;
-            ?>
+            <?php print $data['sectionTitle']['whatdoTitle']; ?>
         </h2>
         <div class="what-do-content">
             <ul class="what-do-list">
                 <?php
-                $whatdoContent = $data['whatdoContent'];
-                foreach($whatdoContent as $whatdoItem) {
+                foreach($data['whatdoContent'] as $whatdoItem) {
                     print ' <li class="what-do-item">
                     <picture>
                         <img class="what-do-item-img" src='.$whatdoItem['whatdoItemImg'].' alt='.$whatdoItem['whatdoItemTitle'].'>
@@ -146,7 +123,7 @@ $data = require('data.php');
                 ?>
             </ul>
             <?php
-            print '<a class="header-btn btn-class" href='.$buttonAsk['url'].'>'.$buttonAsk['title'].'</a>';
+            print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
             ?>
         </div>
     </div>
@@ -154,85 +131,61 @@ $data = require('data.php');
 
 <section class="sliderjs row">
     <div class="slideshow-container slide-left col-lg-6 col-xl-4">
-        <div class="slide1">
-            <img src="assets/img/portfolio_img1.png" alt="img 1">
-        </div>
-        <div class="slide1">
-            <img src="assets/img/portfolio_img2.png" alt="img 2">
-        </div>
-        <div class="slide1">
-            <img src="assets/img/portfolio_img3.png" alt="img 3">
-        </div>
+        <?php
+        foreach ($data['sliderContent']['1'] as $sliderItem) {
+            print  '<div class="slide1"><img src='.$sliderItem['src'].' alt='.$sliderItem['alt'].'></div>';
+        };
+        ?>
         <div class="slider-info-bg">
             <div class="slider-info">
                 <h2 class="section-title">
-                    <?php $sliderTitle = $sectionTitle['sliderTitle'];
-                    print $sliderTitle;
-                    ?>
+                    <?php print $data['sectionTitle']['sliderTitle']; ?>
                     </h2>
                 <p class="section-parag">
-                    <?php $sliderParag = $sectionParag['sliderParag'];
-                    print $sliderParag;
-                    ?>
+                    <?php print $data['sectionParag']['sliderParag']; ?>
                 </p>
                 <?php
-                print '<a class="header-btn btn-class" href='.$buttonAsk['url'].'>'.$buttonAsk['title'].'</a>';
+                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
         </div>
     </div>
     <div class="slideshow-container slide-center col-lg-6 col-xl-4">
-        <div class="slide2">
-            <img src="assets/img/portfolio_img2.png" alt="img 2">
-        </div>
-        <div class="slide2">
-            <img src="assets/img/portfolio_img3.png" alt="img 3">
-        </div>
-        <div class="slide2">
-            <img src="assets/img/portfolio_img1.png" alt="img 1">
-        </div>
+        <?php
+        foreach ($data['sliderContent']['2'] as $sliderItem) {
+            print  '<div class="slide2"><img src='.$sliderItem['src'].' alt='.$sliderItem['alt'].'></div>';
+        };
+        ?>
         <div class="slider-info-bg">
             <div class="slider-info">
                 <h2 class="section-title">
-                    <?php $sliderTitle = $sectionTitle['sliderTitle'];
-                    print $sliderTitle;
-                    ?>
+                    <?php print $data['sectionTitle']['sliderTitle']; ?>
                 </h2>
                 <p class="section-parag">
-                    <?php $sliderParag = $sectionParag['sliderParag'];
-                    print $sliderParag;
-                    ?>
+                    <?php print $data['sectionParag']['sliderParag']; ?>
                 </p>
                 <?php
-                print '<a class="header-btn btn-class" href='.$buttonAsk['url'].'>'.$buttonAsk['title'].'</a>';
+                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
         </div>
     </div>
     <div class="slideshow-container slide-right col-xl-4">
-        <div class="slide3">
-            <img src="assets/img/portfolio_img3.png" alt="img 3">
-        </div>
-        <div class="slide3">
-            <img src="assets/img/portfolio_img1.png" alt="img 1">
-        </div>
-        <div class="slide3">
-            <img src="assets/img/portfolio_img2.png" alt="img 2">
-        </div>
+        <?php
+        foreach ($data['sliderContent']['3'] as $sliderItem) {
+            print  '<div class="slide3"><img src='.$sliderItem['src'].' alt='.$sliderItem['alt'].'></div>';
+        };
+        ?>
         <div class="slider-info-bg">
             <div class="slider-info">
                 <h2 class="section-title">
-                    <?php $sliderTitle = $sectionTitle['sliderTitle'];
-                    print $sliderTitle;
-                    ?>
+                    <?php print $data['sectionTitle']['sliderTitle']; ?>
                 </h2>
                 <p class="section-parag">
-                    <?php $sliderParag = $sectionParag['sliderParag'];
-                    print $sliderParag;
-                    ?>
+                    <?php print $data['sectionParag']['sliderParag']; ?>
                 </p>
                 <?php
-                print '<a class="header-btn btn-class" href='.$buttonAsk['url'].'>'.$buttonAsk['title'].'</a>';
+                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
         </div>
@@ -241,23 +194,17 @@ $data = require('data.php');
     <a class="next" onclick="plusSlides(-1)"><i class="fas fa-angle-right arrow"></i></a>
 </section>
 
-
 <section class="about-us">
     <div class="container">
         <h2 class="section-title">
-            <?php $aboutusTitle = $sectionTitle['aboutusTitle'];
-            print $aboutusTitle;
-            ?>
+            <?php print $data['sectionTitle']['aboutusTitle']; ?>
         </h2>
         <p class="section-parag m-auto">
-            <?php $aboutusParag = $sectionParag['aboutusParag'];
-            print $aboutusParag;
-            ?>
+            <?php print $data['sectionParag']['aboutusParag']; ?>
         </p>
         <ul class="about-us-list row">
             <?php
-            $aboutusContent = $data['aboutusContent'];
-            foreach ($aboutusContent as $aboutusItem) {
+            foreach ($data['aboutusContent'] as $aboutusItem) {
                 print '<li class="about-us-item col-12 col-sm-6 col-lg-3">
                 <figure>
                     <img class="about-us-img" src='.$aboutusItem['aboutusItemImg'].' alt='.$aboutusItem['aboutusItemFigcaption'].'>
@@ -269,8 +216,7 @@ $data = require('data.php');
             ?>
         </ul>
         <?php
-        $buttonWatch = $buttons['watch'];
-        print '<a class="header-btn btn-class" href='.$buttonWatch['url'].'>'.$buttonWatch['title'].'</a>';
+        print '<a class="header-btn btn-class" href='.$data['buttons']['watch']['url'].'>'.$data['buttons']['watch']['title'].'</a>';
         ?>
     </div>
 </section>
@@ -286,4 +232,3 @@ $data = require('data.php');
 <script src="assets/js/main.js"></script>
 
 </body>
-
