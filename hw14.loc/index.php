@@ -87,7 +87,7 @@ $data = require('data.php');
                 <h2 class="section-title"><span class="special-title">
                         <?php print $data['sectionTitle']['designcodeTitle']['best']; ?>
                     </span>
-                        <?php print $data['sectionParag']['designcodeParag']['code'];
+                        <?php print $data['sectionTitle']['designcodeTitle']['code'];
                         ?>
                     </h2>
                 <p class="section-parag">
