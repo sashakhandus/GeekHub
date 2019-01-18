@@ -1,0 +1,60 @@
+.btn-class {
+  color: $color-secondary;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  @include respond-to('small') {
+    font-size: 18px;
+  }
+
+  @include respond-to('medium') {
+    font-size: 18px;
+  }
+
+  @include respond-to('large') {
+    font-size: 18px;
+  }
+
+  @include respond-to('huge') {
+    font-size: 18px;
+  }
+
+}
+
+.section-title {
+  color: $color-primary;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+
+  @include respond-to('small') {
+    font-size: 48px;
+  }
+}
+
+.section-parag {
+  color: $color-primary;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+
+  @include respond-to('small') {
+    color: $color-parag;
+    font-size: 18px;
+  }
+
+  @include respond-to('medium') {
+    font-size: 18px;
+  }
+
+  @include respond-to('large') {
+    font-size: 18px;
+  }
+
+  @include respond-to('huge') {
+    font-size: 18px;
+  }
+}

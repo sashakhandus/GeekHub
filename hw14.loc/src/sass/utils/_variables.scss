@@ -1,0 +1,11 @@
+$color-primary: #000000;
+$color-secondary: #ffffff;
+$color-parag: #949494;
+
+$breakpoints: (
+  'small': (min-width: 576px),
+ 'medium': (min-width: 768px),
+ 'large': (min-width: 992px),
+  'huge': (min-width: 1200px),
+);
+
