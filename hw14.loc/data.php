@@ -113,47 +113,56 @@ return [
                     Curabitur ullamcorper auctor mauris, placerat fermentum.',
     ],
     'sliderContent' => [
-        '1' => [
-            [
-                'src' => 'assets/img/portfolio_img1.png',
-                'alt' => 'img 1',
-            ],
-            [
-                'src' => 'assets/img/portfolio_img2.png',
-                'alt' => 'img 2',
-            ],
-            [
-                'src' => 'assets/img/portfolio_img3.png',
-                'alt' => 'img 3',
-            ],
+         [
+             'position' => ' slide-left col-lg-6 col-xl-4',
+             'imgs' => [
+                 [
+                     'src' => 'assets/img/portfolio_img1.png',
+                     'alt' => 'img 1',
+                     ],
+                 [
+                     'src' => 'assets/img/portfolio_img2.png',
+                     'alt' => 'img 2',
+                     ],
+                 [
+                     'src' => 'assets/img/portfolio_img3.png',
+                     'alt' => 'img 3',
+                     ],
+                 ],
         ],
-        '2' => [
-            [
-                'src' => 'assets/img/portfolio_img2.png',
-                'alt' => 'img 2',
-            ],
-            [
-                'src' => 'assets/img/portfolio_img3.png',
-                'alt' => 'img 3',
-            ],
-            [
-                'src' => 'assets/img/portfolio_img1.png',
-                'alt' => 'img 1',
-            ],
+        [
+            'position' => ' slide-center col-lg-6 col-xl-4',
+            'imgs' => [
+                [
+                    'src' => 'assets/img/portfolio_img2.png',
+                    'alt' => 'img 2',
+                    ],
+                [
+                    'src' => 'assets/img/portfolio_img3.png',
+                    'alt' => 'img 3',
+                    ],
+                [
+                    'src' => 'assets/img/portfolio_img1.png',
+                    'alt' => 'img 1',
+                    ],
+                ],
         ],
-        '3' => [
-            [
-                'src' => 'assets/img/portfolio_img3.png',
-                'alt' => 'img 3',
-            ],
-            [
-                'src' => 'assets/img/portfolio_img1.png',
-                'alt' => 'img 1',
-            ],
-            [
-                'src' => 'assets/img/portfolio_img2.png',
-                'alt' => 'img 2',
-            ],
+        [
+            'position' => ' slide-right col-xl-4',
+            'imgs' => [
+                [
+                    'src' => 'assets/img/portfolio_img3.png',
+                    'alt' => 'img 3',
+                    ],
+                [
+                    'src' => 'assets/img/portfolio_img1.png',
+                    'alt' => 'img 1',
+                    ],
+                [
+                    'src' => 'assets/img/portfolio_img2.png',
+                    'alt' => 'img 2',
+                    ],
+                ],
         ],
     ],
 ]

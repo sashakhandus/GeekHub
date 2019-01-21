@@ -131,69 +131,20 @@ $data = require('data.php');
 
 <section class="sliderjs row">
 
-    <div class="slideshow-container slide-left col-lg-6 col-xl-4">
-        <?php
-        foreach ($data['sliderContent']['1'] as $sliderItem) {
-            print  '<div class="slide1"><img src='.$sliderItem['src'].' alt='.$sliderItem['alt'].'></div>';
+    <?php
+    $i = 1;
+    foreach ($data['sliderContent'] as $slider) {
+        print '<div class="slideshow-container'.$slider['position'].'">';
+        foreach ($slider['imgs'] as $sliderItem) {
+            print  '<div class="slide'.$i.'"><img src='.$sliderItem['src'].' alt='.$sliderItem['alt'].'></div>';
         };
-        ?>
-        <div class="slider-info-bg">
-            <div class="slider-info">
-                <h2 class="section-title">
-                    <?php print $data['slider']['sliderTitle']; ?>
-                    </h2>
-                <p class="section-parag">
-                    <?php print $data['slider']['sliderParag']; ?>
-                </p>
-                <br>
-                <?php
-                print '<a class="slider-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
-                ?>
-            </div>
-        </div>
-    </div>
-    <div class="slideshow-container slide-center col-lg-6 col-xl-4">
-        <?php
-        foreach ($data['sliderContent']['2'] as $sliderItem) {
-            print  '<div class="slide2"><img src='.$sliderItem['src'].' alt='.$sliderItem['alt'].'></div>';
-        };
-        ?>
-        <div class="slider-info-bg">
-            <div class="slider-info">
-                <h2 class="section-title">
-                    <?php print $data['slider']['sliderTitle']; ?>
-                </h2>
-                <p class="section-parag">
-                    <?php print $data['slider']['sliderParag']; ?>
-                </p>
-                <br>
-                <?php
-                print '<a class="slider-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
-                ?>
-            </div>
-        </div>
-    </div>
-    <div class="slideshow-container slide-right col-xl-4">
-        <?php
-        foreach ($data['sliderContent']['3'] as $sliderItem) {
-            print  '<div class="slide3"><img src='.$sliderItem['src'].' alt='.$sliderItem['alt'].'></div>';
-        };
-        ?>
-        <div class="slider-info-bg">
-            <div class="slider-info">
-                <h2 class="section-title">
-                    <?php print $data['slider']['sliderTitle']; ?>
-                </h2>
-                <p class="section-parag">
-                    <?php print $data['slider']['sliderParag']; ?>
-                </p>
-                <br>
-                <?php
-                print '<a class="slider-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
-                ?>
-            </div>
-        </div>
-    </div>
+        print '<div class="slider-info-bg"><div class="slider-info">';
+        print '<h2 class="section-title">'.$data['slider']['sliderTitle'].'</h2><p class="section-parag">'.$data['slider']['sliderParag'].'</p><br>';
+        print '<a class="slider-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a></div></div></div>';
+        $i++;
+    };
+    ?>
+
     <a class="prev" onclick="plusSlides(1)"><i class="fas fa-angle-left arrow"></i></a>
     <a class="next" onclick="plusSlides(-1)"><i class="fas fa-angle-right arrow"></i></a>
 </section>
