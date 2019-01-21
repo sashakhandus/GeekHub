@@ -130,6 +130,7 @@ $data = require('data.php');
 </section>
 
 <section class="sliderjs row">
+
     <div class="slideshow-container slide-left col-lg-6 col-xl-4">
         <?php
         foreach ($data['sliderContent']['1'] as $sliderItem) {
@@ -139,13 +140,14 @@ $data = require('data.php');
         <div class="slider-info-bg">
             <div class="slider-info">
                 <h2 class="section-title">
-                    <?php print $data['sectionTitle']['sliderTitle']; ?>
+                    <?php print $data['slider']['sliderTitle']; ?>
                     </h2>
                 <p class="section-parag">
-                    <?php print $data['sectionParag']['sliderParag']; ?>
+                    <?php print $data['slider']['sliderParag']; ?>
                 </p>
+                <br>
                 <?php
-                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
+                print '<a class="slider-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
         </div>
@@ -159,13 +161,14 @@ $data = require('data.php');
         <div class="slider-info-bg">
             <div class="slider-info">
                 <h2 class="section-title">
-                    <?php print $data['sectionTitle']['sliderTitle']; ?>
+                    <?php print $data['slider']['sliderTitle']; ?>
                 </h2>
                 <p class="section-parag">
-                    <?php print $data['sectionParag']['sliderParag']; ?>
+                    <?php print $data['slider']['sliderParag']; ?>
                 </p>
+                <br>
                 <?php
-                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
+                print '<a class="slider-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
         </div>
@@ -179,13 +182,14 @@ $data = require('data.php');
         <div class="slider-info-bg">
             <div class="slider-info">
                 <h2 class="section-title">
-                    <?php print $data['sectionTitle']['sliderTitle']; ?>
+                    <?php print $data['slider']['sliderTitle']; ?>
                 </h2>
                 <p class="section-parag">
-                    <?php print $data['sectionParag']['sliderParag']; ?>
+                    <?php print $data['slider']['sliderParag']; ?>
                 </p>
+                <br>
                 <?php
-                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
+                print '<a class="slider-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
                 ?>
             </div>
         </div>

@@ -35,7 +35,6 @@ return [
             'code' => 'Code',
         ],
         'whatdoTitle' => 'What we do?',
-        'sliderTitle' => 'Neptune template',
         'aboutusTitle' => 'About us!',
     ],
     'sectionParag' => [
@@ -46,8 +45,6 @@ return [
             'code' => ' Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor
                     mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.',
         ],
-        'sliderParag' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                    Curabitur ullamcorper auctor mauris, placerat fermentum.',
         'aboutusParag' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor
             mauris, placerat fermentum.',
     ],
@@ -110,6 +107,11 @@ return [
             'url' => '#',
             ],
     ],
+    'slider' => [
+        'sliderTitle' => 'Neptune template',
+        'sliderParag' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                    Curabitur ullamcorper auctor mauris, placerat fermentum.',
+    ],
     'sliderContent' => [
         '1' => [
             [
@@ -153,8 +155,6 @@ return [
                 'alt' => 'img 2',
             ],
         ],
-
-
     ],
 ]
 ?>
