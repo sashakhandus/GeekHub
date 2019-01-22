@@ -26,10 +26,7 @@ $data = require('data.php');
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light header-nav">
             <a class="navbar-brand logo" href="/" >
-                <?php
-                $siteLogo = $data['siteLogo'];
-                print '<img src='.$data['siteLogo']['src'].' alt='.$data['siteLogo']['alt'].'>'
-                ?>
+                <img src="<?php echo $data['siteLogo']['src']?>" alt="<?php echo $data['siteLogo']['alt']?>" >
             </a>
             <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,8 +36,11 @@ $data = require('data.php');
                 <ul class="navbar-nav ml-auto">
                     <?php
                     foreach($data['mainMenu'] as $itemMenu) {
-                        print '<li class="nav-item menu-item"><a class="menu-link" href='.$itemMenu["url"].'>'.$itemMenu["title"].'</a>
-                    </li>';
+                        ?>
+                        <li class="nav-item menu-item">
+                            <a class="menu-link" href=<?php echo $itemMenu["url"]?> > <?php echo $itemMenu["title"] ?></a>
+                        </li>
+                    <?php
                     }
                     ?>
                 </ul>
@@ -54,9 +54,7 @@ $data = require('data.php');
                 <?php print $data['sectionParag']['headerParag']; ?>
             </p>
             <div>
-                <?php
-                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
-                ?>
+              <a class="header-btn btn-class" href=<?php echo $data['buttons']['ask']['url']?> > <?php echo $data['buttons']['ask']['title']?> </a>
             </div>
             <div>
                 <a class="scroll-btn" href="#"></a>
@@ -77,9 +75,7 @@ $data = require('data.php');
                 <p class="section-parag">
                     <?php print $data['sectionParag']['designcodeParag']['design']; ?>
                 </p>
-                <?php
-                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
-                ?>
+                <a class="header-btn btn-class" href=<?php echo $data['buttons']['ask']['url']?> > <?php echo $data['buttons']['ask']['title']?> </a>
             </div>
         </div>
         <div class="col-12 col-lg-6 code">
@@ -93,9 +89,7 @@ $data = require('data.php');
                 <p class="section-parag">
                     <?php print $data['sectionParag']['designcodeParag']['design']; ?>
                 </p>
-                <?php
-                print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
-                ?>
+                <a class="header-btn btn-class" href=<?php echo $data['buttons']['ask']['url']?> > <?php echo $data['buttons']['ask']['title']?> </a>
             </div>
         </div>
     </div>
@@ -110,21 +104,21 @@ $data = require('data.php');
             <ul class="what-do-list">
                 <?php
                 foreach($data['whatdoContent'] as $whatdoItem) {
-                    print ' <li class="what-do-item">
+                    ?>
+                <li class="what-do-item">
                     <picture>
-                        <img class="what-do-item-img" src='.$whatdoItem['whatdoItemImg'].' alt='.$whatdoItem['whatdoItemTitle'].'>
+                        <img class="what-do-item-img" src=<?php echo $whatdoItem['whatdoItemImg']?> alt="<?php echo $whatdoItem['whatdoItemTitle']?>" >
                     </picture>
                     <div class="what-do-item-info">
-                        <h3 class="what-do-item-title">'.$whatdoItem['whatdoItemTitle'].'</h3>
-                        <p class="what-do-item-parag">'.$whatdoItem['whatdoItemParag'].'</p>
+                        <h3 class="what-do-item-title"><?php echo $whatdoItem['whatdoItemTitle']?></h3>
+                        <p class="what-do-item-parag"><?php echo $whatdoItem['whatdoItemParag']?></p>
                     </div>
-                </li>';
+                </li>
+                <?php
                 }
                 ?>
             </ul>
-            <?php
-            print '<a class="header-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a>';
-            ?>
+            <a class="header-btn btn-class" href=<?php echo $data['buttons']['ask']['url']?> > <?php echo $data['buttons']['ask']['title']?> </a>
         </div>
     </div>
 </section>
@@ -134,13 +128,25 @@ $data = require('data.php');
     <?php
     $i = 1;
     foreach ($data['sliderContent'] as $slider) {
-        print '<div class="slideshow-container'.$slider['position'].'">';
+        ?>
+    <div class="slideshow-container <?php echo $slider['position']?>">
+        <?php
         foreach ($slider['imgs'] as $sliderItem) {
-            print  '<div class="slide'.$i.'"><img src='.$sliderItem['src'].' alt='.$sliderItem['alt'].'></div>';
+        ?>
+            <div class="slide<?php echo $i?>">
+                <img src=<?php echo $sliderItem['src']?> alt="<?php echo $sliderItem['alt']?>">
+            </div>
+        <?php
         };
-        print '<div class="slider-info-bg"><div class="slider-info">';
-        print '<h2 class="section-title">'.$data['slider']['sliderTitle'].'</h2><p class="section-parag">'.$data['slider']['sliderParag'].'</p><br>';
-        print '<a class="slider-btn btn-class" href='.$data['buttons']['ask']['url'].'>'.$data['buttons']['ask']['title'].'</a></div></div></div>';
+        ?>
+        <div class="slider-info-bg"><div class="slider-info">
+                <h2 class="section-title"><?php echo $data['slider']['sliderTitle']?></h2>
+                <p class="section-parag"><?php echo $data['slider']['sliderParag']?></p>
+                <a class="slider-btn btn-class" href=<?php echo $data['buttons']['ask']['url']?> > <?php echo $data['buttons']['ask']['title']?> </a>
+            </div>
+        </div>
+    </div>
+    <?php
         $i++;
     };
     ?>
@@ -160,19 +166,19 @@ $data = require('data.php');
         <ul class="about-us-list row">
             <?php
             foreach ($data['aboutusContent'] as $aboutusItem) {
-                print '<li class="about-us-item col-12 col-sm-6 col-lg-3">
+            ?>
+             <li class="about-us-item col-12 col-sm-6 col-lg-3">
                 <figure>
-                    <img class="about-us-img" src='.$aboutusItem['aboutusItemImg'].' alt='.$aboutusItem['aboutusItemFigcaption'].'>
-                    <figcaption>'.$aboutusItem['aboutusItemFigcaption'].'</figcaption>
+                    <img class="about-us-img" src=<?php echo $aboutusItem['aboutusItemImg']?> alt="<?php echo $aboutusItem['aboutusItemFigcaption']?>" >
+                    <figcaption><?php echo $aboutusItem['aboutusItemFigcaption']?></figcaption>
                 </figure>
-                <p class="section-parag">'.$aboutusItem['aboutusItemParag'].'</p>
-            </li>';
+                <p class="section-parag"><?php echo $aboutusItem['aboutusItemParag']?></p>
+            </li>
+            <?php
             }
             ?>
         </ul>
-        <?php
-        print '<a class="header-btn btn-class" href='.$data['buttons']['watch']['url'].'>'.$data['buttons']['watch']['title'].'</a>';
-        ?>
+        <a class="header-btn btn-class" href=<?php echo $data['buttons']['ask']['url']?> > <?php echo $data['buttons']['ask']['title']?> </a>
     </div>
 </section>
 
