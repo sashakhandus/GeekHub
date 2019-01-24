@@ -33,6 +33,16 @@ $(document).ready(function(){
     }
    }
 
+   function editLocalStorage(oldVal, editVal) {
+     for(let i = 0, len = localStorage.length; i < len; i++) {
+       let key = localStorage.key(i)
+       let value = localStorage[key]
+       if( oldVal === value){
+         localStorage.setItem(key, editVal)
+       }
+     }
+   }
+
    function showLocalStorage() {
      let len = localStorage.length
      if (len > 0) {
@@ -86,10 +96,10 @@ $(document).ready(function(){
     <input type="button" class="input-delete" value="delete">
     <input type="button" class="input-edit" value="edit"></li>`)
     $(this).parent().empty().append(taskItem)
+    editLocalStorage(oldValue, inputVal)
   })
 
   $('.task-list').on('click', '.input-cancel', function() {
-    console.log(oldValue);
     let taskItem = $(`<li><input type="text" class="item-task" value=${oldValue}>
     <input type="button" class="input-delete" value="delete">
     <input type="button" class="input-edit" value="edit"></li>`)
