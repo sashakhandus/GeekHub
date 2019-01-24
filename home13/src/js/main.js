@@ -8,7 +8,7 @@ $(document).ready(function(){
   }
 
   function addTaskItem(inputVal) {
-    let taskItem = $(`<li><input type="text" class="item-task" value=${inputVal}>
+    let taskItem = $(`<li><input type="text" class="item-task" value="${inputVal}">
     <input type="button" class="input-delete" value="delete">
     <input type="button" class="input-edit" value="edit"></li>`)
     $('.task-list').append(taskItem)
@@ -74,7 +74,7 @@ $(document).ready(function(){
     let inputTaskEdit = $(this).parent().find('.item-task')
     inputTaskEdit.addClass('editItem')
     let editValue = inputTaskEdit.val()
-    let taskItemNew = $(`<input type="text" class="item-task" value=${editValue}>
+    let taskItemNew = $(`<input type="text" class="item-task editItem" value=${editValue}>
     <input type="button" class="input-save" value="save">
     <input type="button" class="input-cancel" value="cancel">`)
     $(this).parent().empty().append(taskItemNew)
