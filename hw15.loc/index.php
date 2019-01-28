@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +11,6 @@
 <body>
 <h1>Hello array!!!!</h1>
 <?php
-
-function echoArr($arr) {
-    foreach ($arr as $value) {
-        echo($value.' ');
-    }
-    echo('<br>');
-}
 
 function sortArrayByAsc ($arr) {
     $arrSort[0] = $arr[0];
@@ -60,25 +51,31 @@ function sortArrayByDesc ($arr) {
 $array = [5, 4, 6, 9, 3, 3, 11];
 
 echo ('Array: ');
-echoArr($array);
+var_dump($array);
+echo('<br>');
 
 echo ('Sort array by ascending: ');
-echoArr(sortArrayByAsc($array));
+var_dump(sortArrayByAsc($array));
+echo('<br>');
 
 echo ('Sort array by descending: ');
-echoArr(sortArrayByDesc($array));
-
+var_dump(sortArrayByDesc($array));
+echo('<br>');
 
 $arrayLetters = ['e', 'h', 'vvvv', 'i', 'd', 'a', 'b', 'hhfh', 'z', 'zaswwe', 'zxtyty'];
+echo('<br>');
 
 echo ('Array: ');
-echoArr($arrayLetters);
+var_dump($arrayLetters);
+echo('<br>');
 
 echo ('Sort array by ascending: ');
-echoArr(sortArrayByAsc($arrayLetters));
+var_dump(sortArrayByAsc($arrayLetters));
+echo('<br>');
 
 echo ('Sort array by descending: ');
-echoArr(sortArrayByDesc($arrayLetters));
+var_dump(sortArrayByDesc($arrayLetters));
+echo('<br>');
 
 ?>
 
