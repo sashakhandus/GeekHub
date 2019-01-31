@@ -16,7 +16,11 @@ if ($conn->query($sql) === TRUE) {
 }*/
 
 // sql to create table
-/*$sql = "CREATE TABLE Users (
+
+
+/*
+
+$sql = "CREATE TABLE Users (
 Username VARCHAR(30) NOT NULL PRIMARY KEY,
 Firstname VARCHAR(30) NOT NULL,
 Lastname VARCHAR(30) NOT NULL,
