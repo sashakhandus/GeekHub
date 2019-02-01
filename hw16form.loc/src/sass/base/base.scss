@@ -5,10 +5,15 @@ body {
 .form {
   padding: 30px;
   display: block;
-  width: 800px;
+  width: 500px;
   margin: 0 auto;
 }
 
 .error {
   color: #FF0000;
+}
+
+.errors span{
+  color: #FF0000;
+  display: block;
 }

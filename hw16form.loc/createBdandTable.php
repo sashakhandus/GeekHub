@@ -7,20 +7,17 @@
  */
 
 
-/* Create database
-$sql = "CREATE DATABASE hw16UsersDB";
+ //Create database
+$sql = "CREATE DATABASE  IF NOT EXISTS hw16UsersDB";
 if ($conn->query($sql) === TRUE) {
-    echo "Database created successfully";
+    echo "<br>Database connection successfully";
 } else {
-    echo "Error creating database: " . $conn->error;
-}*/
+    echo "<br>Error creating database: " . $conn->error;
+}
 
 // sql to create table
 
-
-/*
-
-$sql = "CREATE TABLE Users (
+$sql = "CREATE TABLE IF NOT EXISTS Users (
 Username VARCHAR(30) NOT NULL PRIMARY KEY,
 Firstname VARCHAR(30) NOT NULL,
 Lastname VARCHAR(30) NOT NULL,
@@ -31,8 +28,8 @@ Gender VARCHAR(10) NOT NULL
 )";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Table MyGuests created successfully";
+    echo "<br>Table hw16UsersDB connection successfully";
 } else {
-    echo "Error creating table: " . $conn->error;
-}*/
+    echo "<br>Error creating table: " . $conn->error;
+}
 ?>

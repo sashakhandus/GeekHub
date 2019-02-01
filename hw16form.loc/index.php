@@ -16,7 +16,7 @@ include("createBdandTable.php");
 
 <?php
 // define variables and set to empty values
-$user_nameErr = $first_nameErr = $last_nameErr = $passwordErr = $password_repeatErr = $emailErr = $ageErr = "";
+$user_nameErr = $first_nameErr = $last_nameErr = $passwordErr = $password_repeatErr = $emailErr = $ageErr = $genderErr = "";
 //$user_name = $first_name = $last_name = $password = $password_repeat = $email = $age = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -99,52 +99,69 @@ function test_input($data) {
 <form class="form" action="<?php echo $_SERVER["PHP_SELF"];?>" method="post">
     <fieldset>
         <legend>Registration form</legend>
+        <div class="errors">
+            <span><?php echo $user_nameErr;?></span>
+            <span><?php echo $first_nameErr;?></span>
+            <span><?php echo $last_nameErr;?></span>
+            <span><?php echo $password_repeatErr;?></span>
+            <span><?php echo $emailErr;?></span>
+            <span><?php echo $ageErr;?></span>
+            <span><?php echo $genderErr;?></span>
+        </div>
         <div class="input-item">
             <label for="name">Username: </label>
-            <input type="text" name="user_name" required>
-            <span class="error">* <?php echo $user_nameErr;?></span>
-            <br>
+            <div>
+                <input type="text" name="user_name" placeholder="Enter your username" required>
+                <span class="error">*</span>
+            </div>
         </div>
         <div class="input-item" >
             <label for="firstname">First name: </label>
-            <input type="text" name="first_name" required>
-            <span class="error">* <?php echo $first_nameErr;?></span>
-            <br>
+            <div>
+                <input type="text" name="first_name" placeholder="Enter your first name" required>
+                <span class="error">*</span>
+            </div>
         </div>
         <div class="input-item">
             <label for="lastname">Last name: </label>
-            <input type="text" name="last_name" required>
-            <span class="error">* <?php echo $last_nameErr;?></span>
-            <br>
+            <div>
+                <input type="text" name="last_name" placeholder="Enter your last name" required>
+                <span class="error">*</span>
+            </div>
         </div>
         <div class="input-item">
             <label for="password">Password: </label>
-            <input type="text" name="password" required>
-            <span class="error">* <?php echo $passwordErr;?></span>
-            <br>
+            <div>
+                <input type="text" name="password" placeholder="Enter your password" required>
+                <span class="error">*</span>
+            </div>
         </div>
         <div class="input-item">
             <label for="passwordrepeat">Repeat password: </label>
-            <input type="text" name="password_repeat" required>
-            <span class="error">* <?php echo $password_repeatErr;?></span>
-            <br>
+            <div>
+                <input type="text" name="password_repeat" placeholder="Repeat your password"required>
+                <span class="error">*</span>
+            </div>
         </div>
         <div class="input-item">
             <label for="email">E-mail: </label>
-            <input type="email" name="email" required>
-            <span class="error">* <?php echo $emailErr;?></span>
-            <br>
+            <div>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <span class="error">*</span>
+            </div>
         </div>
         <div class="input-item">
-            <label for="age">Age:  </label><input type="number" name="age">
-            <span class="error">* <?php echo $ageErr;?></span>
-            <br>
+            <label for="age">Age:  </label>
+            <div>
+                <input type="number" name="age" placeholder="Enter your age" required>
+                <span class="error">*</span>
+            </div>
         </div>
-        <div class="input-item">
+        <div class="input-item-radio">
             <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?>  value="male"> Male
             <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female"> Female
             <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other"> Other
-            <span class="error">* <?php echo $emailErr;?></span><br>
+            <span class="error">*</span><br>
         </div>
     </fieldset>
     <br>
