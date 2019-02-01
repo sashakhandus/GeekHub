@@ -41,28 +41,28 @@ if ($result2->num_rows > 0) {
     echo "0 results";
 }
 
-//$sql3 = "SELECT source FROM url_alias WHERE alias = 'users/serhiy'";
-$sql4 = "SELECT * FROM history WHERE uid LIKE '3%' LIMIT 20";
-$result4 = $conn->query($sql4);
 
-if ($result4->num_rows > 0) {
+$sql3 = "SELECT history.uid, history.nid, history.timestamp, users.name, users.mail FROM history LEFT JOIN users ON history.uid = users.uid WHERE users.name = 'serhiy' ORDER BY history.timestamp DESC LIMIT 20 ";
+$result3 = $conn->query($sql3);
+
+if ($result3->num_rows > 0) {
     echo "<br><br>3.Get user name and nodes that where published by user 'serhiy'(output username and email with each node). get last 20 nodes.";
     // output data of each row
-    while($row = $result4->fetch_assoc()) {
-        echo "<br>" . $row["uid"] . ", " . $row["nid"] . ", " . $row["timestamp"];
+    while($row = $result3->fetch_assoc()) {
+        echo "<br>" . $row["uid"] . ", " . $row["nid"] . ", " . $row["timestamp"]  . ", " . $row["name"]  . ", " . $row["mail"];
         // echo "<br>" . $row["source"];
     }
 } else {
     echo "0 results";
 }
 
-$sql5 = "SELECT * FROM variable WHERE name LIKE '%cache%' AND name != 'cache' ";
-$result5 = $conn->query($sql5);
+$sql4 = "SELECT * FROM variable WHERE name LIKE '%cache%' AND name != 'cache' ";
+$result4 = $conn->query($sql4);
 
-if ($result5->num_rows > 0) {
+if ($result4->num_rows > 0) {
     echo "<br><br>4. Get all variable name that has cache word(cache_akjsgdkjag) but not (cache)(see variable table) ";
     // output data of each row
-    while($row = $result5->fetch_assoc()) {
+    while($row = $result4->fetch_assoc()) {
         echo "<br>". $row["name"]  .  ", " . $row["value"] ;
     }
 } else {
