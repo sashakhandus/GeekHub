@@ -28,7 +28,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 
-$sql2 = "SELECT * FROM node WHERE type = 'delivery' AND title LIKE '8046%' AND created BETWEEN '1538344800' AND '1541026800'";
+$sql2 = "SELECT * FROM node WHERE type = 'delivery' AND title LIKE '8046%' AND DATE_FORMAT(FROM_UNIXTIME(created), '%M') = 'October'";
 $result2 = $conn->query($sql2);
 
 if ($result2->num_rows > 0) {

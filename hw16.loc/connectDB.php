@@ -21,15 +21,12 @@ if ($conn->connect_error) {
 
 
  //Create database
-/*$sql = "CREATE DATABASE vantazhavto";
+$sql = "CREATE DATABASE  IF NOT EXISTS vantazhavto";
 if ($conn->query($sql) === TRUE) {
-    echo "Database created successfully";
+    echo "<br>Database connection successfully";
 } else {
     echo "Error creating database: " . $conn->error;
-}*/
-
-//$dbname = "vantazhavto";
-
+}
 
 echo "<br>";
 ?>
