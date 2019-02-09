@@ -11,7 +11,7 @@ session_start();
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<h1>New post</h1>
+<h1>New post user <?php echo $_SESSION['session_username'] ?></h1>
 
 <?php
 include("connectbd.php");
@@ -20,29 +20,20 @@ include("createBdandTable.php");
 
 <?php
 
-print_r($_SESSION);
-// define variables and set to empty values
-$titleErr = $postErr = "";
+//print_r($_SESSION);
+$errors = [];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["title"])) {
-            $titleErr = "Title is required";
+            $errors[] = "Title is required";
         } else {
             $title = test_input($_POST["title"]);
-            // check if name only contains letters and whitespace
-            if (!preg_match("/^[a-zA-Z ]*$/",$title)) {
-                $title = "Only letters and white space allowed";
-            }
         }
 
         if (empty($_POST["post"])) {
-            $postErr = "First name is required";
+            $errors[] = "Post is required";
         } else {
             $post = test_input($_POST["post"]);
-            // check if name only contains letters and whitespace
-            if (!preg_match("/^[a-zA-Z ]*$/",$post)) {
-                $postErr = "Only letters and white space allowed";
-            }
         }
     }
 
@@ -59,8 +50,13 @@ function test_input($data) {
     <fieldset>
         <legend>User Post</legend>
         <div class="errors">
-            <span><?php echo $titleErr;?></span>
-            <span><?php echo $postErr;?></span>
+            <?php if (!empty($errors)) {
+                foreach ($errors as $error) {?>
+                    <span class="error"><?php echo $error?></span>
+                    <?php
+                }
+            }
+            ?>
         </div>
         <div class="input-item">
             <label for="name">Title post </label>
@@ -85,15 +81,14 @@ function test_input($data) {
 <?php
 
 if (isset($_POST['post-submit'])) {
-    if (!empty($title) && !empty($post)) {
+    if (empty($errors)) {
         $user_name = $_SESSION['session_username'];
 
         $query = "SELECT UserID FROM Users WHERE Username ='$user_name'";
         $result = $conn->query($query);
 
         if ($result->num_rows == 1) {
-            echo "<br><br> User ID:    ";
-            // output data of each row
+            echo "<br><br>";
             $row = $result->fetch_assoc();
             $_SESSION['session_userID'] = $row["UserID"];
             $user_id = $_SESSION['session_userID'];
@@ -109,7 +104,7 @@ if (isset($_POST['post-submit'])) {
     }
 }
 
-print_r($_SESSION);
+//print_r($_SESSION);
 
 $conn->close();
 

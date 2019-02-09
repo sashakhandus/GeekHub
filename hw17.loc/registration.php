@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<h1>FORM</h1>
+<h1>Registration form</h1>
 
 <?php
 include("connectbd.php");
@@ -15,65 +15,62 @@ include("createBdandTable.php");
 ?>
 
 <?php
-// define variables and set to empty values
-$user_nameErr = $first_nameErr = $last_nameErr = $passwordErr = $password_repeatErr = $emailErr = $ageErr = $genderErr = "";
-//$user_name = $first_name = $last_name = $password = $password_repeat = $email = $age = "";
+$errors = [];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["user_name"])) {
-            $user_nameErr = "User-name is required";
+            $errors[] = "User-name is required";
         } else {
             $user_name = test_input($_POST["user_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/",$user_name)) {
-                $user_nameErr = "Only letters and white space allowed";
+                $errors[] = "Only letters and white space allowed user name";
             }
         }
 
         if (empty($_POST["first_name"])) {
-            $first_nameErr = "First name is required";
+            $errors[] = "First name is required";
         } else {
             $first_name = test_input($_POST["first_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/",$first_name)) {
-                $first_nameErr = "Only letters and white space allowed";
+                $errors[] = "Only letters and white space allowed first name";
             }
         }
 
         if (empty($_POST["last_name"])) {
-            $last_nameErr = "Last name is required";
+            $errors[] = "Last name is required";
         } else {
             $last_name = test_input($_POST["last_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/",$last_name)) {
-                $last_nameErr = "Only letters and white space allowed";
+                $errors[] = "Only letters and white space allowed last name";
             }
         }
 
         if (empty($_POST["email"])) {
-            $emailErr = "Email is required";
+            $errors[] = "Email is required";
         } else {
             $email = test_input($_POST["email"]);
         }
 
         if (empty($_POST["age"])) {
-            $ageErr = "";
+            $errors[] = "Age name is required";
         } else if((int)($_POST["age"]) > 150) {
-            $ageErr = "Your age is very big!";
+            $errors[] = "Your age is very big!";
             } else {
             $age = test_input($_POST["age"]);
         }
 
         if (empty($_POST["password"])) {
-            $passwordErr = "Password is required";
+            $errors[] = "Password is required";
         }
 
         if (empty($_POST["password_repeat"])) {
-            $password_repeatErr = "Password is required";
+            $errors[] = "Password_repeat is required";
         } else {
             if ($_POST["password"] != $_POST["password_repeat"]) {
-                $passwordErr = "The two password do not match";
-                $password_repeatErr = "The two password do not match";
+                $errors[] = "The two password do not match";
             } else {
                 $password = md5(test_input($_POST["password"]));
 
@@ -81,7 +78,7 @@ $user_nameErr = $first_nameErr = $last_nameErr = $passwordErr = $password_repeat
         }
 
         if (empty($_POST["gender"])) {
-            $genderErr = "Gender is required";
+            $errors[] = "Gender is required";
         } else {
             $gender = test_input($_POST["gender"]);
         }
@@ -100,13 +97,13 @@ function test_input($data) {
     <fieldset>
         <legend>Registration form</legend>
         <div class="errors">
-            <span><?php echo $user_nameErr;?></span>
-            <span><?php echo $first_nameErr;?></span>
-            <span><?php echo $last_nameErr;?></span>
-            <span><?php echo $password_repeatErr;?></span>
-            <span><?php echo $emailErr;?></span>
-            <span><?php echo $ageErr;?></span>
-            <span><?php echo $genderErr;?></span>
+            <?php if (!empty($errors)) {
+                foreach ($errors as $error) {?>
+            <span class="error"><?php echo $error?></span>
+            <?php
+                }
+            }
+            ?>
         </div>
         <div class="input-item">
             <label for="name">Username: </label>
@@ -168,8 +165,7 @@ function test_input($data) {
     <input type="submit" name="register"><br>
 </form>
 
-<h2>Return Login</h2>
-<a href="index.php">login</a>
+<a href="index.php" class="btn">login</a>
 
 <?php
 

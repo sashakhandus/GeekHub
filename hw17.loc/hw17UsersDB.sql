@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 08, 2019 at 01:01 PM
+-- Generation Time: Feb 09, 2019 at 10:43 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.13
 
@@ -44,7 +44,10 @@ INSERT INTO `Posts` (`PostID`, `UserID`, `Title`, `Post`, `Created`) VALUES
 (1, 2, 'ewrer', 'ffgghhgjhj', '02.08.19'),
 (2, 2, 'vgghg', 'ggfhghhghgjjhgjhg', '02.08.19'),
 (3, 2, 'fdgfgfg', 'gbhnhjjhjhjh', '02.08.19'),
-(5, 1, 'drere', 'eerrettyuyi', '02.08.19');
+(5, 1, 'drere', 'eerrettyuyi', '02.08.19'),
+(7, 1, 'gjyjkuyk', 'jyukiuoupuioiuoiui', '02.08.19'),
+(8, 4, 'ergttyyt', 'rrttyyuyiyuiyiyiy', '02.09.19'),
+(10, 4, 'mbnbmmjhjjh', 'nnnbghjghjhjgjghhjhg', '02.09.19');
 
 -- --------------------------------------------------------
 
@@ -70,7 +73,8 @@ CREATE TABLE `Users` (
 INSERT INTO `Users` (`UserID`, `Username`, `Firstname`, `Lastname`, `Password`, `Email`, `Age`, `Gender`) VALUES
 (1, 'qqq', 'qqq', 'qqq', 'b2ca678b4c936f905fb82f2733f5297f', 'qqq@qqq', 22, 'female'),
 (2, 'www', 'www', 'www', '4eae35f1b35977a00ebd8086c259d4c9', 'www@www', 32, 'male'),
-(3, 'zzz', 'zzz', 'zzz', 'f3abb86bd34cf4d52698f14c0da1dc60', 'zzz@zzz', 45, 'other');
+(3, 'zzz', 'zzz', 'zzz', 'f3abb86bd34cf4d52698f14c0da1dc60', 'zzz@zzz', 45, 'other'),
+(4, 'ttt', 'ttyryyuuty', 'rttyryytuyt', '9990775155c3518a0d7917f7780b24aa', 'ttt@tttttt', 23, 'other');
 
 --
 -- Indexes for dumped tables
@@ -96,13 +100,13 @@ ALTER TABLE `Users`
 -- AUTO_INCREMENT for table `Posts`
 --
 ALTER TABLE `Posts`
-  MODIFY `PostID` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `PostID` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `Users`
 --
 ALTER TABLE `Users`
-  MODIFY `UserID` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `UserID` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

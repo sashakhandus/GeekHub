@@ -11,7 +11,7 @@ session_start();
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<h1>FORM</h1>
+<h1>Login form</h1>
 
 <?php
 include("connectbd.php");
@@ -19,21 +19,21 @@ include("createBdandTable.php");
 ?>
 
 <?php
-$user_nameErr = $first_nameErr = $last_nameErr = $passwordErr = $password_repeatErr = $emailErr = $ageErr = $genderErr = "";
+$errors = [];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["user_name"])) {
-            $user_nameErr = "User-name is required";
+            $errors[] =  "User name is required";
         } else {
             $user_name = test_input($_POST["user_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/",$user_name)) {
-                $user_nameErr = "Only letters and white space allowed";
+                $errors[] = "Only letters and white space allowed user name";
             }
         }
 
         if (empty($_POST["password"])) {
-            $passwordErr = "Password is required";
+            $errors[] =  "Password is required";
         } else {
             $password = md5(test_input($_POST["password"]));
         }
@@ -52,8 +52,13 @@ function test_input($data) {
     <fieldset>
         <legend>Login form</legend>
         <div class="errors">
-            <span><?php echo $user_nameErr;?></span>
-            <span><?php echo $passwordErr;?></span>
+            <?php if (!empty($errors)) {
+                foreach ($errors as $error) {?>
+                    <span class="error"><?php echo $error?></span>
+                    <?php
+                }
+            }
+            ?>
         </div>
         <div class="input-item">
             <label for="name">Username: </label>
@@ -79,7 +84,7 @@ function test_input($data) {
 
 <?php
 
-if (isset($_POST["login"])) {
+if (isset($_POST["login"]) && empty($errors)) {
     if (!empty($user_name) && !empty($password)) {
         $query = "SELECT UserID FROM Users WHERE Password='$password' AND Username='$user_name'";
         $result = $conn->query($query);
@@ -91,12 +96,10 @@ if (isset($_POST["login"])) {
             header("location: userpost.php");
         } else {
             $databaseErr = "Invalid username or password!";
-            echo $databaseErr;
+            echo "<br>" . $databaseErr;
         }
     }
 }
-echo "<br>";
-print_r($_SESSION);
 
 $conn->close();
 
