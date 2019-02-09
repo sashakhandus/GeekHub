@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  background: #F0FFFF;
+}
+
+.form {
+  padding: 30px;
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.error {
+  color: #FF0000;
+}
+
+.errors span{
+  color: #FF0000;
+  display: block;
+}
+
+.user-posts {
+  padding: 0;
+}
+
+.user-posts li {
+  list-style: none;
+  background: #d1ecf1;
+  border: 1px solid #17a2b8;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
