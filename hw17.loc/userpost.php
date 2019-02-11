@@ -80,7 +80,7 @@ function test_input($data) {
 if (isset($_POST['post-submit'])) {
     if (empty($errors)) {
         $user_id = $_SESSION['session_userID'];
-        $date = date("d.m.y");
+        $date = date("y.m.d");
         $sql = "INSERT INTO Posts (UserID, Title, Post, Created) VALUES ('$user_id', '$title', '$post', '$date')";
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
