@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +15,10 @@
 
 <?php
 include("connectbd.php");
-include("createBdandTable.php");
 ?>
 
 <?php
+
 $errors = [];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -184,9 +188,6 @@ VALUES ('$user_name', '$first_name', '$last_name', '$password', '$email', '$age'
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
-
-            echo "New record created successfully!!!????";
-            header ('Location:registration.php');
         } else {
             echo $user_name ."  Username is already exists";
         }

@@ -15,12 +15,10 @@ session_start();
 
 <?php
 include("connectbd.php");
-include("createBdandTable.php");
 ?>
 
 <?php
 
-//print_r($_SESSION);
 $errors = [];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -74,7 +72,6 @@ function test_input($data) {
     <input type="submit" name="post-submit" class="btn"><br>
 </form>
 
-<h2>User post</h2>
 <a href="index.php" class="btn">Home</a>
 <a href="userposts.php" class="btn">All posts user</a>
 
@@ -82,30 +79,18 @@ function test_input($data) {
 
 if (isset($_POST['post-submit'])) {
     if (empty($errors)) {
-        $user_name = $_SESSION['session_username'];
-
-        $query = "SELECT UserID FROM Users WHERE Username ='$user_name'";
-        $result = $conn->query($query);
-
-        if ($result->num_rows == 1) {
-            echo "<br><br>";
-            $row = $result->fetch_assoc();
-            $_SESSION['session_userID'] = $row["UserID"];
-            $user_id = $_SESSION['session_userID'];
-            $date = date("m.d.y");
-            $sql = "INSERT INTO Posts (UserID, Title, Post, Created) VALUES ('$user_id', '$title', '$post', '$date')";
-            if ($conn->query($sql) === TRUE) {
-                echo "New record created successfully";
-                echo "<br>";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
+        $user_id = $_SESSION['session_userID'];
+        $date = date("d.m.y");
+        $sql = "INSERT INTO Posts (UserID, Title, Post, Created) VALUES ('$user_id', '$title', '$post', '$date')";
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+            echo "<br>";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
         }
     }
 }
-
 //print_r($_SESSION);
-
 $conn->close();
 
 ?>

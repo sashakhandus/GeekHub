@@ -15,10 +15,10 @@ session_start();
 
 <?php
 include("connectbd.php");
-include("createBdandTable.php");
 ?>
 
 <?php
+
 $errors = [];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -102,7 +102,6 @@ if (isset($_POST["login"]) && empty($errors)) {
 }
 
 $conn->close();
-
 ?>
 
 </body>

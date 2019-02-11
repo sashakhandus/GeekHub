@@ -11,11 +11,10 @@ session_start();
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<h1>User posts</h1>
+<h1>User <?php echo $_SESSION['session_username']?> posts</h1>
 
 <?php
 include("connectbd.php");
-include("createBdandTable.php");
 ?>
 
 <?php
@@ -78,9 +77,6 @@ foreach($userPosts as $key => $itemPost) {
     }
 }
 
-?>
-
-<?php
 $conn->close();
 ?>
 

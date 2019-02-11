@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 09, 2019 at 10:43 AM
+-- Generation Time: Feb 11, 2019 at 09:46 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.13
 
@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `Posts` (
-  `PostID` int(6) UNSIGNED NOT NULL,
-  `UserID` int(6) NOT NULL,
+  `PostID` int(11) UNSIGNED NOT NULL,
+  `UserID` int(11) NOT NULL,
   `Title` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `Post` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `Created` varchar(256) NOT NULL DEFAULT '0'
@@ -41,13 +41,17 @@ CREATE TABLE `Posts` (
 --
 
 INSERT INTO `Posts` (`PostID`, `UserID`, `Title`, `Post`, `Created`) VALUES
-(1, 2, 'ewrer', 'ffgghhgjhj', '02.08.19'),
 (2, 2, 'vgghg', 'ggfhghhghgjjhgjhg', '02.08.19'),
 (3, 2, 'fdgfgfg', 'gbhnhjjhjhjh', '02.08.19'),
 (5, 1, 'drere', 'eerrettyuyi', '02.08.19'),
 (7, 1, 'gjyjkuyk', 'jyukiuoupuioiuoiui', '02.08.19'),
 (8, 4, 'ergttyyt', 'rrttyyuyiyuiyiyiy', '02.09.19'),
-(10, 4, 'mbnbmmjhjjh', 'nnnbghjghjhjgjghhjhg', '02.09.19');
+(10, 4, 'mbnbmmjhjjh', 'nnnbghjghjhjgjghhjhg', '02.09.19'),
+(11, 2, 'rerrreertrterterte', 'rrrerrtertertetrettttttt gtttyrtyrtyytrn gtrtrtytyryh', '02.09.19'),
+(12, 2, 'trreterer', 'fgbghjtuyuytuyrtyrtytyrtyr', '09.02.19'),
+(13, 3, 'ewertyyrtr', 'rrretttyryyyytu', '09.02.19'),
+(14, 3, 'gggtttr', 'rttrtttttty', '09.02.19'),
+(15, 3, 'zzz', 'zzz', '09.02.19');
 
 -- --------------------------------------------------------
 
@@ -56,7 +60,7 @@ INSERT INTO `Posts` (`PostID`, `UserID`, `Title`, `Post`, `Created`) VALUES
 --
 
 CREATE TABLE `Users` (
-  `UserID` int(6) UNSIGNED NOT NULL,
+  `UserID` int(11) UNSIGNED NOT NULL,
   `Username` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `Firstname` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `Lastname` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
@@ -100,13 +104,13 @@ ALTER TABLE `Users`
 -- AUTO_INCREMENT for table `Posts`
 --
 ALTER TABLE `Posts`
-  MODIFY `PostID` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `PostID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `Users`
 --
 ALTER TABLE `Users`
-  MODIFY `UserID` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `UserID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
