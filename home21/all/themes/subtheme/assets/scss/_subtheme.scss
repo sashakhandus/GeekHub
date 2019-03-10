@@ -1,0 +1,20 @@
+// SASS partials import
+// -----------------------------------------------------------------------------
+@import "subtheme/mixins";
+
+// Layouts
+// -----------------------------------------------------------------------------
+@import "subtheme/layout";
+@import "subtheme/maintenance";
+
+// Components.
+// -----------------------------------------------------------------------------
+@import "subtheme/admin";
+@import "subtheme/comment";
+@import "subtheme/form";
+@import "subtheme/modal";
+@import "subtheme/nav";
+@import "subtheme/node";
+@import "subtheme/panel";
+@import "subtheme/structure";
+@import "subtheme/view";

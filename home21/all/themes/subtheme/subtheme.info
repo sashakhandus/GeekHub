@@ -1,0 +1,41 @@
+name        = subtheme
+description = A Drupal theme with Bootstrap and Sass.
+screenshot  = screenshot.png
+core        = 7.x
+
+; CSS - General
+stylesheets[all][] = assets/css/subtheme.style.css
+stylesheets[all][] = slick/slick.css
+
+; Javascript
+scripts[] = assets/js/subtheme.script.js
+scripts[] = slick/slick.min.js
+
+; Regions
+regions[sidebar_first] = Sidebar
+regions[header] = Header
+regions[content] = Content
+regions[designcode] = Design_code
+regions[what] = What
+regions[carousel] = Carousel
+regions[aboutus] = About_us
+regions[map] = Map
+
+; Hide the sidebar region.
+; Used only for installation.
+regions_hidden[] = sidebar_first
+
+; Features
+features[] = logo
+features[] = name
+features[] = favicon
+
+; Settings
+settings[main_menu_max_depth] = 2
+
+; Information added by Drupal.org packaging script on 2017-02-02
+version = "7.x-3.6"
+core = "7.x"
+project = "subtheme"
+datestamp = "1486032196"
+

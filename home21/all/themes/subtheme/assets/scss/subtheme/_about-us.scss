@@ -1,0 +1,125 @@
+.about-us {
+  background: url("../images/bg-about-us.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  /*@include respond-to('small') {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  @include respond-to('large') {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }*/
+
+  .container {
+    padding: 0;
+
+    .section-title {
+      width: 90%;
+      color: #ffffff;
+      font-size: 40px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+
+      /*@include respond-to('small') {
+        width: auto;
+        margin: auto;
+      }
+
+      @include respond-to('large') {
+        margin-bottom: 30px;
+      }*/
+    }
+
+    .section-parag {
+      color: #949494;
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+
+      /*@include respond-to('small') {
+        width: auto;
+        margin: auto;
+      }*/
+    }
+
+    .about-us-list {
+      width: 90%;
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      margin-top: 30px;
+
+      /*@include respond-to('small') {
+        width: auto;
+        margin-top: 124px;
+      }*/
+
+      .about-us-item {
+        display: inline-block;
+        margin-bottom: 30px;
+
+        /*@include respond-to('medium') {
+          margin-top: 30px;
+          margin-bottom: 0;
+        }
+
+        @include respond-to('large') {
+          margin-top: 0;
+        }*/
+      }
+
+      .about-us-img {
+        margin-bottom: 14px;
+      }
+
+      .last-row {
+
+        /*@include respond-to('medium') {
+          margin-top: 30px;
+        }
+
+        @include respond-to('large') {
+          margin-top: 0;
+        }*/
+      }
+
+      figcaption {
+        color: #ffffff;
+        font-family: Roboto, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+      }
+    }
+
+    .btn-class {
+      margin-top: 50px;
+      color: #ffffff;
+
+      /*@include respond-to('small') {
+        margin-top: 100px;
+      }*/
+    }
+
+    .btn-class:hover {
+      color: #ffffff;
+    }
+
+    .view-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    .views-row {
+      display: inline-block;
+    }
+  }
+}

@@ -88,5 +88,5 @@ $(document).ready(function() {
    $("#num2").val("");
    $(".res").text(`Result: `);
   });
-  
+
 });

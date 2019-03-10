@@ -1,0 +1,63 @@
+.view-view-best-design {
+  .view-content {
+    display: flex;
+    justify-content: space-between;
+
+    .views-row {
+      display: inline-block;
+    }
+
+    .views-row-1 {
+      background: url("../images/bg-design-copy.png");
+      background-position: center;
+      background-size: cover;
+      padding-top: 140px;
+      padding-bottom: 140px;
+
+      .views-field {
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
+        padding-right: 75px;
+      }
+    }
+
+    .views-row-2 {
+      background: url("../images/bg-code-min.png");
+      background-position: center;
+      background-size: cover;
+      padding-top: 140px;
+      padding-bottom: 140px;
+
+      .views-field {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        padding-left: 75px;
+      }
+    }
+
+    .views-field-field-best-title {
+      p {
+        color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 48px;
+        font-family: "Proxima Nova", sans-serif;
+        font-weight: 700;
+      }
+    }
+
+    .views-field-field-best-parag {
+      p {
+        color: #ffffff;
+        margin: 0;
+        margin-bottom: 35px;
+        line-height: 1.75;
+        font-family: "Proxima Nova", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+}
