@@ -1,0 +1,41 @@
+{
+  "name": "challenge",
+  "description": "challenge is a theme base on challenge. It has Bootstrap, Sass, Gulp, BrowserSync and Font Awesome built-in.",
+  "homepage": "http://challengetheme.org",
+  "version": "7.3.3",
+  "authors": [
+    "Arshad Chummun <arshad@chummun.com>"
+  ],
+  "moduleType": "globals",
+  "main": [
+    "assets/scss/_challenge.scss",
+    "assets/js/challenge.script.js"
+  ],
+  "keywords": [
+    "drupal",
+    "themes",
+    "bootstrap",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "includes",
+    "kits",
+    "templates",
+    "logo.png",
+    "challenge.drush.inc",
+    "challenge.info",
+    "screenshot.png",
+    "template.php",
+    "THEMING.md"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

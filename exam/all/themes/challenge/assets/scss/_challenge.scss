@@ -1,0 +1,25 @@
+// SASS partials import
+// -----------------------------------------------------------------------------
+@import "challenge/mixins";
+
+// Layouts
+// -----------------------------------------------------------------------------
+@import "challenge/layout";
+@import "challenge/maintenance";
+
+// Components.
+// -----------------------------------------------------------------------------
+@import "challenge/admin";
+@import "challenge/comment";
+@import "challenge/form";
+@import "challenge/front";
+@import "challenge/layout";
+@import "challenge/maintenance";
+@import "challenge/modal";
+@import "challenge/nav";
+@import "challenge/node";
+@import "challenge/page-candidate-families";
+@import "challenge/panel";
+@import "challenge/region-footer";
+@import "challenge/structure";
+@import "challenge/view";

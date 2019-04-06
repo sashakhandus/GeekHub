@@ -1,0 +1,257 @@
+// Layout
+// --------------------------------------------------
+.container {
+  .container,
+  .container-fluid {
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+
+
+//       Custom css
+//-----------------------------------------------------
+#logo {
+}
+
+.container,
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+//------------------header-banner-----------------
+
+.header-banner-bg {
+  background: url("../images/Layer_43.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 115px;
+  padding-bottom: 115px;
+
+  .header-banner-text {
+    h2{
+      color: #1c1c1c;
+      font-family: Lato, sans-serif;
+      font-size: 36px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    h2:before {
+      display: block;
+      content: "";
+      width: 54px;
+      height: 54px;
+      background-color: #ffac56;
+      border-radius: 30px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+  //----------------industry block front -------------
+
+  .industry-block {
+    background: url("../images/image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 170px;
+    position: relative;
+
+    .view-industry {
+      width: 460px;
+      position: relative;
+      left: 20%;
+
+      .view-header {
+        background-color: #ffac56;
+        padding-top: 35px;
+        padding-bottom: 40px;
+        color: #ffffff;
+        font-family: Montserrat, sans-serif;
+        p {
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        h2 {
+          font-size: 30px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+      }
+
+      .view-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        .views-row {
+          width: 228px;
+          border: 1px solid #00a6d3;
+          background-color: #03b6e7;
+        }
+
+        .views-row:hover {
+          background-color: #00a6d3;
+        }
+
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  //--------------------about-us-block------------------
+
+  .about-us-block {
+    .block__content {
+      display: flex;
+
+      .aboutus-text {
+        p {
+          color: #838b8c;
+          font-family: Domine, sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          max-width: 600px;
+        }
+        p:nth-child(2) {
+
+          font-family: Montserrat, sans-serif;
+          color: #343a3b;
+          font-size: 32px;
+          font-weight: 700;
+        }
+        a {
+          background-color: #16d428;
+          color: #ffffff;
+          font-family: Montserrat, sans-serif;
+          font-size: 13px;
+          font-weight: 400;
+          text-transform: uppercase;
+          border-radius: 20px;
+          padding: 16px 26px;
+        }
+      }
+    }
+  }
+
+  //------------------STEPS-----------------------------
+
+  .steps {
+    h4 {
+      color: #343a3b;
+      font-family: Montserrat, sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .view-steps {
+
+      .view-content {
+        display: flex;
+        justify-content: space-between;
+
+        .views-row {
+          width: 29%;
+        }
+
+        .views-field-title {
+          a {
+            color: #343a3b;
+            font-family: Montserrat, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+
+        .views-field-body {
+          p {
+            color: #838b8c;
+            font-family: Domine, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+          }
+        }
+
+        .views-field-field-step-number {
+          color: #16d428;
+          font-family: Montserrat, sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+  }
+
+
+
+  //-------------------FOOTER----------------------------
+
+  .footer {
+    background-color: #262829;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    h4 {
+      display: inline-block;
+      color: #e1e1e1;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .menu {
+      .leaf {
+        display: block;
+        color: #838b8c;
+
+        a {
+          color: #838b8c;
+          font-family: Montserrat, sans-serif;
+          font-size: 13px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+
+    }
+  }
+
+  .region-footer .block-menu .menu .leaf a {
+    color: #838b8c;
+  }
+
+//----------------view-blog-------------------------
+
+.view-blog {
+
+  .views-row {
+    max-width: 860px;
+    display: block;
+    margin-left: auto;
+  }
+  .views-field-body {
+    max-width: 760px;
+  }
+}
+
+
+//------------------FOOTER-BOTTOM-INFO-------------------
+
+
+
+

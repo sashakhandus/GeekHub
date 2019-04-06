@@ -1,0 +1,40 @@
+// Styles for Views
+// --------------------------------------------------
+
+// Fixes
+// --------------------------------------------------
+.view {
+  .row {
+    > .list-group {
+      @extend .col-md-12;
+    }
+  }
+}
+.views-exposed-form {
+  .views-submit-button,
+  .views-reset-button {
+    margin-top: 3px;
+  }
+}
+
+.families {
+  .view-candidate-families {
+
+    p {
+      display: inline-block;
+    }
+
+//   clearfix    float
+//---------------------------------------------------
+    .views-row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+//---------------------------------------------------
+
+    .views-field-field-candidate-families-img {
+      float: left;
+    }
+  }
+}

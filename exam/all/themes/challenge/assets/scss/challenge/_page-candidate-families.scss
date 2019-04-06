@@ -1,0 +1,234 @@
+.page-candidate-families {
+  #logo {
+    width: 131px;
+    height: auto;
+  }
+
+  .navbar-families {
+    margin-bottom: 0;
+    background: transparent;
+    border: none;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-default {
+      .navbar-nav>li>a {
+        color: #ffffff;
+        font-family: Lato, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      color: #ffffff;
+      font-family: Lato, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .navbar-collapse {
+      background: transparent;
+    }
+
+    .navbar-brand {
+      padding: 0;
+    }
+
+    .main-menu {
+      .leaf {
+        a {
+          color: #ffffff;
+          font-family: Lato, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        a:hover {
+          opacity: 0.7;
+        }
+      }
+
+
+
+      .menu-link-candidate-families {
+        .active-trail {
+          background: #000000;
+          color: #ffffff;
+          font-family: Lato, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .view-candidate-families {
+    background-color: #ffffff;
+
+    .views-row {
+      width: 890px;
+      padding-top: 32px;
+      padding-left: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .views-row:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .views-field-field-candidate-families-img {
+      img {
+        float: left;
+        margin-right: 45px;
+      }
+    }
+
+    .views-field-title {
+      margin-bottom: 5px;
+
+      a {
+        color: #000000;
+        font-family: Lato, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .views-field-body {
+      margin-bottom: 10px;
+
+      p {
+        color: #000000;
+        font-family: Lato, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        max-width: 430px;
+      }
+    }
+
+    .views-field-created {
+      margin-bottom: 10px;
+
+      span {
+        opacity: 0.6;
+        color: #000000;
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+
+    .views-field-edit-node {
+      position: relative;
+
+      a {
+        color: #fed52f;
+        font-family: Lato, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      a:after {
+        content: "\2192";
+        display: block;
+        width: 19px;
+        height: 15px;
+        color: #fed52f;
+        position: absolute;
+        top: 0;
+        right: 350px;
+      }
+    }
+  }
+
+  //------------------pagination-----------
+
+  .view-candidate-families {
+    .item-list {
+      text-align: left;
+      background: #fbf7f4;
+
+      .pager {
+        li {
+          display: inline-block;
+          width: 31px;
+          height: 31px;
+          background: transparent;
+
+          span {
+            color: #000000;
+            font-family: Lato, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+          }
+
+          a {
+            display: inline-block;
+            width: 31px;
+            height: 31px;
+            background: transparent;
+          }
+        }
+
+        .pager-current {
+          span {
+            border: none;
+            background: #fed52f;
+            color: #ffffff;
+            font-family: Lato, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+        .pager-item {
+          a {
+            border: none;
+            background: transparent;
+            color: #000000;
+            font-family: Lato, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+        li.active {
+          background: #fed52f;
+
+          span {
+            color: #ffffff;
+            font-family: Lato, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+          }
+        }
+
+        .pager-next {
+          display: none;
+        }
+
+        .pager-last {
+          display: none;
+        }
+
+        .pager-first {
+          display: none;
+        }
+
+        .pager-previous {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+
+}

@@ -1,0 +1,40 @@
+name        = challenge
+description = A Drupal theme with Bootstrap and Sass.
+screenshot  = screenshot.png
+core        = 7.x
+
+; CSS - General
+stylesheets[all][] = assets/css/challenge.style.css
+;stylesheets[all][] = slick/slick.css
+
+; Javascript
+scripts[] = assets/js/challenge.script.js
+;scripts[] = slick/slick.min.js
+
+; Regions
+regions[header-info] = Header info
+regions[header-banner] = Header banner
+regions[content] = Content
+regions[side-bar] = Side bar
+regions[footer] = Footer
+regions[footer-bottom] = Footer bottom
+
+
+; Hide the sidebar region.
+; Used only for installation.
+regions_hidden[] = sidebar_first
+
+; Features
+features[] = logo
+features[] = name
+features[] = favicon
+
+; Settings
+settings[main_menu_max_depth] = 2
+
+; Information added by Drupal.org packaging script on 2017-02-02
+version = "7.x-3.6"
+core = "7.x"
+project = "challenge"
+datestamp = "1486032196"
+
